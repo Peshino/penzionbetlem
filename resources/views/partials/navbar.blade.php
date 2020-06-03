@@ -17,37 +17,44 @@
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}"><i
-                            class="fas fa-map-marker-alt align-middle"></i>&nbsp;
-                        <span class="align-middle">@lang('messages.penzion_name')</span></a>
+                    <a class="nav-link" href="{{ route('home') }}"><span
+                            class="align-middle">@lang('messages.accommodation')</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}"><span
+                            class="align-middle">@lang('messages.price_list')</span></a>
                 </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
-            {{-- <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}"><span
+                            class="align-middle">@lang('messages.chalupy_name')</span></a>
+                </li>
+                {{-- <li class="nav-item dropdown">
                     <a id="profile-dropdown" class="nav-link dropdown-toggle" href="#" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         <i class="far fa-user align-middle"></i>&nbsp; <span
                             class="caret align-middle">{{ Auth::user()->firstname }}
-            {{ Auth::user()->lastname }}</span>
-            </a>
-
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profile-dropdown">
-                <a class="dropdown-item" href="{{ route('users.edit', Auth::user()->id) }}">
-                    <i class="far fa-user-circle"></i>&nbsp; @lang('messages.profile')
+                {{ Auth::user()->lastname }}</span>
                 </a>
-                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profile-dropdown">
+                    <a class="dropdown-item" href="{{ route('users.edit', Auth::user()->id) }}">
+                        <i class="far fa-user-circle"></i>&nbsp; @lang('messages.profile')
+                    </a>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
-                    <i class="fas fa-power-off"></i>&nbsp; @lang('messages.user_logout')
-                </a>
+                        <i class="fas fa-power-off"></i>&nbsp; @lang('messages.user_logout')
+                    </a>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-            </div>
-            </li>
-            </ul> --}}
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+                </li> --}}
+            </ul>
         </div>
     </div>
 </nav>

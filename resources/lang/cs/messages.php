@@ -30,6 +30,8 @@ return [
     'homepage' => 'Domovská stránka',
     'blog' => 'Blog',
     'posts' => 'Články',
+    'accommodation' => 'Ubytování',
+    'price_list' => 'Ceník',
 
     'title' => 'Titulek',
     'text' => 'Text',
