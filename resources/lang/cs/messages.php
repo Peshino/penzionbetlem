@@ -6,7 +6,8 @@ return [
     'penzion_name' => 'Penzion Betlém',
     'chalupy_name' => 'Chalupy Betlém',
 
-    'footer_rights' => 'Všechna práva vyhrazena',
+    'footer_rights' => 'všechna práva vyhrazena',
+    'created_by' => 'web vytvořil',
 
     'sign_in_tab' => 'Přihlásit se',
     'sign_in_header' => 'Přihlášení',
@@ -32,6 +33,12 @@ return [
     'posts' => 'Články',
     'accommodation' => 'Ubytování',
     'price_list' => 'Ceník',
+    'eating' => 'Stravování',
+    'photo_gallery' => 'Fotogalerie',
+    'tips_for_trips' => 'Tipy na výlety',
+    'reservation' => 'Rezervace',
+    'partners' => 'Partneři',
+    'contacts' => 'Kontakty',
 
     'title' => 'Titulek',
     'text' => 'Text',

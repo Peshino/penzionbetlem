@@ -1,65 +1,89 @@
-<nav class="navbar navbar-expand-lg navbar-icon-top navbar-dark shadow-sm">
-    <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
-            {{-- <img src="{{ asset('img/favicon.png') }}" class="align-middle" alt="logo"> --}}
-            <span class="align-middle">@lang('messages.penzion_name')</span>
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="@lang('messages.toggle_navigation')">
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-        </button>
+<div class="navbar-background-{{ config('variants.name') }} shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-icon-top navbar-dark">
+        <div class="container text-center">
+            <button class="navbar-toggler collapsed mx-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="@lang('messages.toggle_navigation')">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
+                                class="align-middle">@lang('messages.accommodation')</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'price-list') }}"><span
+                                class="align-middle">@lang('messages.price_list')</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
+                                class="align-middle">@lang('messages.eating')</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
+                                class="align-middle">@lang('messages.photo_gallery')</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
+                                class="align-middle">@lang('messages.tips_for_trips')</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
+                                class="align-middle">@lang('messages.reservation')</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
+                                class="align-middle">@lang('messages.partners')</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
+                                class="align-middle">@lang('messages.contacts')</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left Side Of Navbar -->
-
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                            class="align-middle">@lang('messages.accommodation')</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}"><span
-                            class="align-middle">@lang('messages.price_list')</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}"><span
-                            class="align-middle">{{ config('variants.name') }}</span></a>
-                </li>
-            </ul>
-
-            <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link"
-                        href="{{ route(config('variants.variant_2.route_prefix_dash') . 'home') }}"><span
-                            class="align-middle">@lang('messages.chalupy_name')</span></a>
-                </li>
-                {{-- <li class="nav-item dropdown">
-                    <a id="profile-dropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        <i class="far fa-user align-middle"></i>&nbsp; <span
-                            class="caret align-middle">{{ Auth::user()->firstname }}
-                {{ Auth::user()->lastname }}</span>
+    <div class="container variants-menu">
+        <div class="row justify-content-md-center">
+            <div class="col text-center {{ config('variants.variant_1.name') }}-route-prefix">
+                <a class="nav-link" href="{{ route(config('variants.variant_1.route_prefix_dash') . 'home') }}"><span
+                        class="align-middle">@lang('messages.penzion_name')</span></a>
+            </div>
+            <div class="col-md-auto position-absolute z-index-10000 navbar-logo">
+                <a href="{{ route(config('variants.route_prefix_dash') . 'home') }}">
+                    <img src="{{ asset('img/logo_' . config('variants.name') . '.png') }}"
+                        alt="{{ config('variants.name') }} logo">
                 </a>
-
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profile-dropdown">
-                    <a class="dropdown-item" href="{{ route('users.edit', Auth::user()->id) }}">
-                        <i class="far fa-user-circle"></i>&nbsp; @lang('messages.profile')
-                    </a>
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                        <i class="fas fa-power-off"></i>&nbsp; @lang('messages.user_logout')
-                    </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                </div>
-                </li> --}}
-            </ul>
+            </div>
+            <div class="col text-center {{ config('variants.variant_2.name') }}-route-prefix">
+                <a class="nav-link" href="{{ route(config('variants.variant_2.route_prefix_dash') . 'home') }}"><span
+                        class="align-middle">@lang('messages.chalupy_name')</span></a>
+            </div>
         </div>
     </div>
-</nav>
+</div>
+
+@section('scripts')
+<script>
+    var siteVariant2RoutePrefix = '{{ env('SITE_VARIANT_2_ROUTE_PREFIX') }}', 
+        actualUrl = window.location.href;
+
+        if (actualUrl.indexOf(siteVariant2RoutePrefix) >= 0) {
+            $('.{{ config("variants.variant_2.name") }}-route-prefix').addClass('active');
+        } else {
+            $('.{{ config("variants.variant_1.name") }}-route-prefix').addClass('active');
+        }
+</script>
+@endsection

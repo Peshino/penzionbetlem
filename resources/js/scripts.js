@@ -11,6 +11,8 @@ $(document).ready(() => {
 
     $('[data-toggle="tooltip"]').tooltip();
 
+    $(".toast").toast("show");
+
     $("#cookie-bar-button").click(() => {
         Cookies.set("gdpr_cookie_bar", "1", {
             expires: 365
@@ -20,10 +22,10 @@ $(document).ready(() => {
             .removeClass("d-flex");
     });
 
-    $(".navbar-nav .nav-link").click(() => {
-        $(".navbar-nav .nav-link").removeClass("active");
-        $(this).addClass("active");
-    });
+    // $(".navbar-nav .nav-link").click(() => {
+    //     $(".navbar-nav .nav-link").removeClass("active");
+    //     $(this).addClass("active");
+    // });
 
     setTimeout(() => {
         $(".alert").fadeOut(750);
@@ -56,5 +58,15 @@ $(document).ready(() => {
         });
     }
 
-    $(".toast").toast("show");
+    var actualUrl = window.location.href;
+    $('.navbar-nav .nav-item > a[href="' + actualUrl + '"]').parent().addClass('active');
+
+    $('footer a#created-by').on('click mouseover', (event) => {
+        event.preventDefault();
+
+        var $title = $('footer #created-by').attr('data-original-title'),
+            newTitle = $title.replace(' at ', '@');
+
+        $('footer #created-by').attr('data-original-title', newTitle);
+    });
 });

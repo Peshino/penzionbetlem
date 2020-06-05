@@ -9,11 +9,11 @@
     <div class="card-body">
         <div class="content">
             <div class="row">
-                <div class="col">
-                    <img src="{{ asset('img/home_DELETE.PNG') }}" class="align-middle" alt="img">
+                <div class="col-md">
+                    <img src="{{ asset('img/home_DELETE.PNG') }}" class="align-middle img-fluid" alt="img">
                 </div>
-                <div class="col">
-                    <p class="text-center pt-2" style="line-height: 2.5rem; font-size: 1.2rem;">
+                <div class="col-md">
+                    <p class="text-center pt-2">
                         PENZION BETLÉM je umístěn v centru města Hlinska
                         ve stejnojmenném skanzenu, který je součástí Souboru
                         lidových staveb Vysočina. Z části roubená a z části zděná

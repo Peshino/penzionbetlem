@@ -1,6 +1,10 @@
 footer {
     color: #bbbbbb;
     background-color: #0c2b2a;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
 }
 
 footer a {
@@ -11,4 +15,12 @@ footer a {
 footer a:hover {
     color: #ffffff;
     text-decoration: none;
+}
+
+.footer-background-penzion {
+    background-color: #0c2b2a;
+}
+
+.footer-background-chalupy {
+    background-color: #2b0c0c;
 }
