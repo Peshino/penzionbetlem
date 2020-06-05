@@ -1,20 +1,32 @@
-@extends('layouts.app')
+@extends('layouts.master')
+
+@section('title')
+@lang('messages.' . config('variants.name') . '_name')
+@endsection
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <img src="{{ asset('img/home_DELETE.PNG') }}" class="align-middle" alt="img">
+                </div>
+                <div class="col">
+                    <p class="text-center pt-2" style="line-height: 2.5rem; font-size: 1.2rem;">
+                        PENZION BETLÉM je umístěn v centru města Hlinska
+                        ve stejnojmenném skanzenu, který je součástí Souboru
+                        lidových staveb Vysočina. Z části roubená a z části zděná
+                        budova byla postaveny v roce 2020 v duchu původní
+                        horácké architektury. Vybavení pokojů je ve stylu starých
+                        roubených chalup, skříně, postele, noční stolky, lampičky,
+                        garnyže jsou vyrobeny z masivu – smrku.
+                    </p>
+                    <p class="mt-3">
+                        <p class="text-center">Přijměte vřelé pozvání k pobytu.</p>
+                        <p class="text-center"><strong>David Navrátil</strong></p>
+                        <p class="text-center"><small><em>majitel PENZION BETLÉM</em></small></p>
+                    </p>
                 </div>
             </div>
         </div>

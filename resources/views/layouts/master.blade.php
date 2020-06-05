@@ -8,7 +8,7 @@
 
     <title>@yield('title')</title>
 
-    <link href="{{ asset('img/favicon.png') }}" rel="shortcut icon">
+    <link href="{{ asset('img/favicon_' . config('variants.name') . '.png') }}" rel="shortcut icon">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
 </head>

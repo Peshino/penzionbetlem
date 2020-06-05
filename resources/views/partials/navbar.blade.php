@@ -17,19 +17,24 @@
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}"><span
+                    <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
                             class="align-middle">@lang('messages.accommodation')</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}"><span
                             class="align-middle">@lang('messages.price_list')</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}"><span
+                            class="align-middle">{{ config('variants.name') }}</span></a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}"><span
+                    <a class="nav-link"
+                        href="{{ route(config('variants.variant_2.route_prefix_dash') . 'home') }}"><span
                             class="align-middle">@lang('messages.chalupy_name')</span></a>
                 </li>
                 {{-- <li class="nav-item dropdown">
