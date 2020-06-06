@@ -11,44 +11,44 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                                class="align-middle">@lang('messages.accommodation')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                            <span class="align-middle">@lang('messages.accommodation')</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'price-list') }}"><span
-                                class="align-middle">@lang('messages.price_list')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'price-list') }}">
+                            <span class="align-middle">@lang('messages.price_list')</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                                class="align-middle">@lang('messages.eating')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                            <span class="align-middle">@lang('messages.eating')</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                                class="align-middle">@lang('messages.photo_gallery')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                            <span class="align-middle">@lang('messages.photo_gallery')</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                                class="align-middle">@lang('messages.tips_for_trips')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                            <span class="align-middle">@lang('messages.tips_for_trips')</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                                class="align-middle">@lang('messages.reservation')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                            <span class="align-middle">@lang('messages.reservation')</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                                class="align-middle">@lang('messages.partners')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                            <span class="align-middle">@lang('messages.partners')</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}"><span
-                                class="align-middle">@lang('messages.contacts')</span></a>
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
+                            <span class="align-middle">@lang('messages.contacts')</span>
+                        </a>
                     </li>
                 </ul>
             </div>

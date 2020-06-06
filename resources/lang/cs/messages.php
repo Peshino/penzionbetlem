@@ -62,6 +62,23 @@ return [
 
     'new' => 'nový',
 
+    'accommodation_type_1' => 'dvoulůžkový pokoj',
+    'accommodation_type_2' => 'třílůžkový pokoj',
+    'accommodation_type_3' => 'apartmán',
+
+    'contacts_penzion_address' => 'Veleslavínova 1612, Hlinsko 539 01',
+    'contacts_penzion_company' => 'Betlém Hlinsko, spol. s r.o.',
+    'contacts_penzion_company_address' => 'Resslova 1521, Hlinsko 539 01',
+    'contacts_penzion_company_telephone' => '+420 775 006 700',
+    'contacts_penzion_company_ic' => 'IČ.: 260 08 971',
+
+    'contacts_chalupy_address' => 'Veleslavínova 1612, Hlinsko 539 01',
+    'contacts_chalupy_company' => 'Betlém Hlinsko, spol. s r.o.',
+    'contacts_chalupy_company_address' => 'Resslova 1521, Hlinsko 539 01',
+    'contacts_chalupy_company_telephone' => '+420 775 006 700',
+    'contacts_chalupy_company_ic' => 'IČ.: 260 08 971',
+
+
 
     'flash_error' => 'Něco se pokazilo',
     'flash_post_created' => 'Článek vytvořen',

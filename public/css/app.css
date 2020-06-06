@@ -10940,8 +10940,7 @@ a.text-dark:focus {
 
 body {
   font-family: "EncodeSans-Regular", sans-serif;
-  background: linear-gradient(to bottom, #f1e8dd 0%, rgba(246, 240, 233, 0) 35%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1e8dd", endColorstr="#00ffffff", GradientType=0);
+  background-color: #ffffff;
 }
 
 html {
@@ -11256,6 +11255,11 @@ html {
   min-height: 100vh;
 }
 
+#main main {
+  background: linear-gradient(to bottom, #f1e8dd 0%, rgba(246, 240, 233, 0) 35%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1e8dd", endColorstr="#00ffffff", GradientType=0);
+}
+
 #main .content a {
   color: #1d1d1d;
   text-decoration: none;
@@ -11264,6 +11268,32 @@ html {
 #main .content a:hover {
   color: #000000;
   text-decoration: none;
+}
+
+#main .content .image-hover {
+  position: relative;
+}
+
+#main .content .image-hover img {
+  width: 100%;
+  vertical-align: top;
+}
+
+#main .content .image-hover:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+#main .content .image-hover:hover:after {
+  opacity: 1;
 }
 
 #main p {
@@ -11764,18 +11794,84 @@ html {
   color: #000000 !important;
 }
 
+#main .tooltip {
+  font-size: 1rem !important;
+}
+
+#main .first-part {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+#main .middle-part {
+  padding-top: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+#main .last-part {
+  padding-top: 0.75rem;
+}
+
+#main .about-us-text {
+  line-height: 2.2rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+  #main .about-us-text {
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+#main .facebook-plugin {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #main .facebook-plugin {
+    width: 430px;
+  }
+}
+
+@media (max-width: 992px) {
+  #main .facebook-plugin {
+    width: 100%;
+    text-align: center !important;
+    margin: auto;
+  }
+}
+
+#main .home-contacts p {
+  font-size: 1rem;
+}
+
+#main .home-contacts a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#main .home-contacts a:hover {
+  text-decoration: underline;
+}
+
 footer {
   color: #bbbbbb;
   background-color: #0c2b2a;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2rem;
 }
 
 footer a {
   color: #eeeeee;
   text-decoration: none;
+}
+
+footer p {
+  font-size: 0.8rem;
 }
 
 footer a:hover {
@@ -11789,5 +11885,11 @@ footer a:hover {
 
 .footer-background-chalupy {
   background-color: #2b0c0c;
+}
+
+@media (max-width: 400px) {
+  footer p {
+    font-size: 0.6rem;
+  }
 }
 

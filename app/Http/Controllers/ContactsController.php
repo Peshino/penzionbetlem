@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PriceListController extends Controller
+class ContactsController extends Controller
 {
     /**
      * Display
@@ -13,6 +13,6 @@ class PriceListController extends Controller
      */
     public function index()
     {
-        return view('price-list');
+        return view('contacts');
     }
 }

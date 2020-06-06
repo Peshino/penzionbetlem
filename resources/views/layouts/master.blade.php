@@ -24,6 +24,9 @@
 
             <main class="py-4">
                 <div class="container content">
+                    {{-- facebook plugin --}}
+                    <div id="fb-root"></div>
+
                     @yield('content')
                 </div>
             </main>
@@ -33,6 +36,10 @@
             @include('partials/cookie-bar')
         </div>
     </div>
+
+    {{-- facebook plugin --}}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v7.0">
+    </script>
 
     <script src="{{ mix('js/app.js') }}"></script>
     @yield('scripts')

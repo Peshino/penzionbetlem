@@ -11,6 +11,8 @@ Route::prefix('/')->group(function () {
     Route::get('/ubytovani', 'AccommodationController@index')->name('accommodation');
 
     Route::get('/cenik', 'PriceListController@index')->name('price-list');
+
+    Route::get('/kontakty', 'ContactsController@index')->name('contacts');
 });
 
 Route::prefix(config('variants.variant_2.route_prefix'))->group(function () {
@@ -19,4 +21,6 @@ Route::prefix(config('variants.variant_2.route_prefix'))->group(function () {
     Route::get('/ubytovani', 'AccommodationController@index')->name(config('variants.variant_2.route_prefix_dash') . 'accommodation');
 
     Route::get('/cenik', 'PriceListController@index')->name(config('variants.variant_2.route_prefix_dash') . 'price-list');
+
+    Route::get('/kontakty', 'ContactsController@index')->name(config('variants.variant_2.route_prefix_dash') . 'contacts');
 });
