@@ -43,7 +43,14 @@
                         <p class="mt-3">
                             <p class="text-center">Přijměte vřelé pozvání k pobytu.</p>
                             <p class="text-center"><strong>David Navrátil</strong></p>
-                            <p class="text-center"><small><em>majitel PENZION BETLÉM</em></small></p>
+                            <p class="text-center">
+                                <small>
+                                    <em>
+                                        majitel - <span class="text-uppercase">{{ config('variants.name') }}
+                                            BETLÉM</span>
+                                    </em>
+                                </small>
+                            </p>
                         </p>
                     </div>
                 </div>

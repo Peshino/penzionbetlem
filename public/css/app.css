@@ -11267,7 +11267,11 @@ html {
 
 #main .content a:hover {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+#main .content ul {
+  list-style: none;
 }
 
 #main .content .image-hover {
