@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-lg pb-3">
                         <img src="{{ asset('img/' . config('variants.name') . '_home.png') }}"
-                            class="align-middle img-fluid rounded" alt="img">
+                            class="align-middle img-fluid rounded" alt="{{ config('variants.name') }}">
                     </div>
                     <div class="col-lg">
                         <p class="text-center pt-2 about-us-text">

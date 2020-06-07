@@ -1,4 +1,4 @@
-<div class="navbar-background-{{ config('variants.name') }} shadow-sm">
+<div class="navbar-background-{{ config('variants.name') }} shadow">
     <nav class="navbar navbar-expand-lg navbar-icon-top navbar-dark">
         <div class="container text-center">
             <button class="navbar-toggler collapsed mx-auto" type="button" data-toggle="collapse"
@@ -21,7 +21,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'eating') }}">
                             <span class="align-middle">@lang('messages.eating')</span>
                         </a>
                     </li>

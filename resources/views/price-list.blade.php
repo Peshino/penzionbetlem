@@ -8,11 +8,11 @@
 <div class="card mb-4">
     <div class="card-body">
         <div class="content">
+            <div class="pb-4">
+                <h3>@lang('messages.price_list') {{ now()->year }}</h3>
+            </div>
+            @if ($variant1)
             <div class="first-part">
-                <div class="pb-4">
-                    <h3>@lang('messages.price_list') {{ now()->year }}</h3>
-                </div>
-                @if ($variant1)
                 <div class="pb-2">
                     <h4>@lang('messages.accommodation_type_1') - standard</h4>
                 </div>
@@ -43,7 +43,7 @@
                         <tr class="text-center">
                             <th colspan="3">
                                 <small>
-                                    @lang('messages.accommodation_type_1') - celkem 5x | ceny ubytování bez stravy |
+                                    ceny ubytování bez stravy |
                                     výměna lůžkovin a ručníku po 5-ti
                                     dnech
                                 </small>
@@ -92,7 +92,7 @@
                         <tr class="text-center">
                             <th colspan="3">
                                 <small>
-                                    @lang('messages.accommodation_type_2') - celkem 2x | ceny ubytování bez stravy |
+                                    ceny ubytování bez stravy |
                                     výměna lůžkovin a ručníku po 5-ti
                                     dnech
                                 </small>
@@ -136,7 +136,7 @@
                         <tr class="text-center">
                             <th colspan="3">
                                 <small>
-                                    @lang('messages.accommodation_type_3') - celkem 1x | ceny ubytování bez stravy |
+                                    ceny ubytování bez stravy |
                                     výměna lůžkovin a ručníku po 5-ti
                                     dnech
                                 </small>
@@ -144,16 +144,9 @@
                         </tr>
                     </tbody>
                 </table>
-                @endif
-
-                @if ($variant2)
-                Ceník
-
-                @endif
             </div>
 
             <div class="middle-part">
-                @if ($variant1)
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
@@ -189,15 +182,9 @@
                         </ul>
                     </div>
                 </div>
-                @endif
-
-                @if ($variant2)
-
-                @endif
             </div>
 
             <div class="middle-part">
-                @if ($variant1)
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
@@ -214,15 +201,9 @@
                         </p>
                     </div>
                 </div>
-                @endif
-
-                @if ($variant2)
-
-                @endif
             </div>
 
             <div class="middle-part">
-                @if ($variant1)
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
@@ -246,15 +227,9 @@
                         </p>
                     </div>
                 </div>
-                @endif
-
-                @if ($variant2)
-
-                @endif
             </div>
 
             <div class="middle-part">
-                @if ($variant1)
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
@@ -290,15 +265,10 @@
                         </table>
                     </div>
                 </div>
-                @endif
-
-                @if ($variant2)
-
-                @endif
             </div>
 
             <div class="last-part">
-                <p>Pro více informací využijte sekci
+                <p>Pro více informací přejděte do sekce
                     <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
                         <span class="text-uppercase">
                             @lang('messages.contacts')
@@ -306,6 +276,11 @@
                     </a>
                 </p>
             </div>
+            @endif
+
+            @if ($variant2)
+
+            @endif
         </div>
     </div>
 </div>
