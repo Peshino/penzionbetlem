@@ -14,7 +14,7 @@
             @if ($variant1)
             <div class="first-part">
                 <div class="pb-2">
-                    <h4>vlastní - společná zařízená kuchyňka</h4>
+                    <h4 class="color-{{ config('variants.name') }}">vlastní - společná zařízená kuchyňka</h4>
                 </div>
                 <div class="row">
                     <div class="col-lg">
@@ -55,18 +55,26 @@
                         </ul>
                     </div>
                     <div class="col-lg pb-2">
-                        <img src="{{ asset('img/' . config('variants.name') . '_eating_1.png') }}"
-                            class="align-middle img-fluid rounded" alt="{{ config('variants.name') }} - kuchyňka">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_1.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_1.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow"
+                                alt="{{ config('variants.name') }} - kuchyňka">
+                        </a>
                     </div>
                     <div class="col-lg">
-                        <img src="{{ asset('img/' . config('variants.name') . '_eating_2.png') }}"
-                            class="align-middle img-fluid rounded" alt="{{ config('variants.name') }} - kuchyňka">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_2.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_2.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow"
+                                alt="{{ config('variants.name') }} - kuchyňka">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="middle-part">
                 <div class="pb-2">
-                    <h4>veřejné stravování</h4>
+                    <h4 class="color-{{ config('variants.name') }}">veřejné stravování</h4>
                 </div>
                 <div class="row">
                     <div class="col-lg pb-2 text-justify">
@@ -84,12 +92,18 @@
                         </p>
                     </div>
                     <div class="col-lg pb-2">
-                        <img src="{{ asset('img/' . config('variants.name') . '_eating_3.png') }}"
-                            class="align-middle img-fluid rounded" alt="Hospoda u Sv. Huberta">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_3.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_3.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow" alt="Hospoda u Sv. Huberta">
+                        </a>
                     </div>
                     <div class="col-lg">
-                        <img src="{{ asset('img/' . config('variants.name') . '_eating_4.png') }}"
-                            class="align-middle img-fluid rounded" alt="Hospoda u Sv. Huberta">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_4.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_4.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow" alt="Hospoda u Sv. Huberta">
+                        </a>
                     </div>
                 </div>
             </div>

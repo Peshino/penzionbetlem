@@ -14,7 +14,9 @@
             @if ($variant1)
             <div class="first-part">
                 <div class="pb-2">
-                    <h4>@lang('messages.accommodation_type_1') - standard</h4>
+                    <h4 class="color-{{ config('variants.name') }}" class="color-{{ config('variants.name') }}">
+                        @lang('messages.accommodation_type_1') - standard
+                    </h4>
                 </div>
                 <table class="table table-hover">
                     <thead>
@@ -44,7 +46,7 @@
                             <th colspan="3">
                                 <small>
                                     ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5-ti
+                                    výměna lůžkovin a ručníku po 5
                                     dnech
                                 </small>
                             </th>
@@ -53,7 +55,8 @@
                 </table>
 
                 <div class="pb-2">
-                    <h4>@lang('messages.accommodation_type_2') - standard</h4>
+                    <h4 class="color-{{ config('variants.name') }}">@lang('messages.accommodation_type_2') - standard
+                    </h4>
                 </div>
                 <table class="table table-hover">
                     <thead>
@@ -93,7 +96,7 @@
                             <th colspan="3">
                                 <small>
                                     ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5-ti
+                                    výměna lůžkovin a ručníku po 5
                                     dnech
                                 </small>
                             </th>
@@ -102,7 +105,8 @@
                 </table>
 
                 <div class="pb-2">
-                    <h4>@lang('messages.accommodation_type_3') - standard</h4>
+                    <h4 class="color-{{ config('variants.name') }}">@lang('messages.accommodation_type_3') - standard
+                    </h4>
                 </div>
                 <table class="table table-hover">
                     <thead>
@@ -137,7 +141,7 @@
                             <th colspan="3">
                                 <small>
                                     ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5-ti
+                                    výměna lůžkovin a ručníku po 5
                                     dnech
                                 </small>
                             </th>
@@ -150,7 +154,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
-                            <h4>vyšší standard</h4>
+                            <h4 class="color-{{ config('variants.name') }}">vyšší standard</h4>
                         </div>
                         <ul class="pl-4">
                             <li>
@@ -166,7 +170,7 @@
                     </div>
                     <div class="col">
                         <div class="pb-2">
-                            <h4>nadstandard</h4>
+                            <h4 class="color-{{ config('variants.name') }}">nadstandard</h4>
                         </div>
                         <ul class="pl-4">
                             <li>
@@ -188,7 +192,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
-                            <h4>děti</h4>
+                            <h4 class="color-{{ config('variants.name') }}">děti</h4>
                         </div>
                         <p>
                             Děti do 3 let bez nároku na lůžko zdarma.
@@ -207,7 +211,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
-                            <h4>pronájem celého penzionu</h4>
+                            <h4 class="color-{{ config('variants.name') }}">pronájem celého penzionu</h4>
                         </div>
                         <p>
                             Celý penzion soukromě bez přítomnosti dalších hostů.
@@ -233,7 +237,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
-                            <h4>stravování</h4>
+                            <h4 class="color-{{ config('variants.name') }}">stravování</h4>
                         </div>
                         <p>
                             <strong>Vlastní stravování</strong> - k dispozici plně vybavená kuchyň se společenskou

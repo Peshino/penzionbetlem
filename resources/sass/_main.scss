@@ -24,30 +24,12 @@
             list-style: none;
         }
 
-        .image-hover {
-            position: relative;
+        img.hover-shadow {
+            transition: 0.3s;
         }
 
-        .image-hover img {
-            width: 100%;
-            vertical-align: top;
-        }
-
-        .image-hover:after {
-            content: '\A';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transition: all 0.5s;
-            -webkit-transition: all 0.5s;
-        }
-
-        .image-hover:hover:after {
-            opacity: 1;
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     }
 
@@ -70,12 +52,12 @@
         border-radius: 0.25rem;
     }
 
-    .krasojizda-bg {
-        background: #ed2f65;
-        background: -moz-linear-gradient(-45deg, #ed2f65 0%, #2bbcff 100%);
-        background: -webkit-linear-gradient(-45deg, #ed2f65 0%, #2bbcff 100%);
-        background: linear-gradient(135deg, #ed2f65 0%, #2bbcff 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed2f65', endColorstr='#2bbcff', GradientType=1);
+    .color-penzion {
+        color: #165f5e;
+    }
+
+    .color-chalupy {
+        color: #5f1717;
     }
 
     .bg-penzion {

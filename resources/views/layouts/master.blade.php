@@ -10,6 +10,7 @@
 
     <link href="{{ asset('img/favicon_' . config('variants.name') . '.png') }}" rel="shortcut icon">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/ekko-lightbox.css') }}" rel="stylesheet">
     @yield('styles')
 </head>
 
@@ -42,6 +43,7 @@
     </script>
 
     <script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ asset('js/ekko-lightbox.js') }}" defer></script>
     @yield('scripts')
 </body>
 

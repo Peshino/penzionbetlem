@@ -63,11 +63,9 @@
                 <div class="row">
                     <div class="col-lg">
                         <a href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
-                            <div class="image-hover">
-                                <img src="{{ asset('img/' . config('variants.name') . '_accommodation_1.png') }}"
-                                    class="align-middle img-fluid rounded"
-                                    alt="{{ config('variants.name') }} @lang('messages.accommodation') 1">
-                            </div>
+                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_1.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow"
+                                alt="{{ config('variants.name') }} @lang('messages.accommodation') 1">
                         </a>
                         <div class="text-center pt-3 pb-1">
                             <h4>@lang('messages.accommodation_type_1')</h4>
@@ -75,11 +73,9 @@
                     </div>
                     <div class="col-lg">
                         <a href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
-                            <div class="image-hover">
-                                <img src="{{ asset('img/' . config('variants.name') . '_accommodation_2.png') }}"
-                                    class="align-middle img-fluid rounded"
-                                    alt="{{ config('variants.name') }} @lang('messages.accommodation') 2">
-                            </div>
+                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_2.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow"
+                                alt="{{ config('variants.name') }} @lang('messages.accommodation') 2">
                         </a>
                         <div class="text-center pt-3 pb-1">
                             <h4>@lang('messages.accommodation_type_2')</h4>
@@ -87,11 +83,9 @@
                     </div>
                     <div class="col-lg">
                         <a href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
-                            <div class="image-hover">
-                                <img src="{{ asset('img/' . config('variants.name') . '_accommodation_3.png') }}"
-                                    class="align-middle img-fluid rounded"
-                                    alt="{{ config('variants.name') }} @lang('messages.accommodation') 3">
-                            </div>
+                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_3.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow"
+                                alt="{{ config('variants.name') }} @lang('messages.accommodation') 3">
                         </a>
                         <div class="text-center pt-3 pb-1">
                             <h4>@lang('messages.accommodation_type_3')</h4>

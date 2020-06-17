@@ -50083,6 +50083,10 @@ $(document).ready(function () {
         newTitle = $title.replace(' at ', '@');
     $('footer #created-by').attr('data-original-title', newTitle);
   });
+  $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
 });
 
 /***/ }),

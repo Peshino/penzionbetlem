@@ -31,12 +31,18 @@
                     <div class="col-lg">
                         <div class="row pb-2">
                             <div class="col">
-                                <img src="{{ asset('img/' . config('variants.name') . '_home.png') }}"
-                                    class="align-middle img-fluid rounded" alt="img">
+                                <a href="{{ asset('img/' . config('variants.name') . '_home.png') }}"
+                                    data-toggle="lightbox" data-gallery="gallery">
+                                    <img src="{{ asset('img/' . config('variants.name') . '_home.png') }}"
+                                        class="align-middle img-fluid rounded" alt="img">
+                                </a>
                             </div>
                             <div class="col">
-                                <img src="{{ asset('img/' . config('variants.name') . '_home.png') }}"
-                                    class="align-middle img-fluid rounded" alt="img">
+                                <a href="{{ asset('img/' . config('variants.name') . '_home.png') }}"
+                                    data-toggle="lightbox" data-gallery="gallery">
+                                    <img src="{{ asset('img/' . config('variants.name') . '_home.png') }}"
+                                        class="align-middle img-fluid rounded" alt="img">
+                                </a>
                             </div>
                         </div>
                         <div class="row">
@@ -56,7 +62,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="pb-2">
-                            <h4>Kapacita objektu</h4>
+                            <h4 class="color-{{ config('variants.name') }}">Kapacita objektu</h4>
                         </div>
                         <ul class="pl-4">
                             <li>
