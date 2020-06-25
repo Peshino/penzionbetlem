@@ -5,6 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="author" content="Jiří Pešek" />
+    <meta name="copyright" content="Penzion Betlém, Chalupy Betlém" />
+    <meta name="keywords" content="penzion, betlem, hlinsko, chalupy, ubytovani" />
+    <meta name="description"
+        content="Penzion Betlém (a Chalupy Betlém) poskytují ubytovací a stravovací služby v centru města Hlinska ve skanzenu Betlém." />
 
     <title>@yield('title')</title>
 

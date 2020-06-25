@@ -14,6 +14,8 @@ Route::prefix('/')->group(function () {
 
     Route::get('/stravovani', 'EatingController@index')->name('eating');
 
+    Route::get('/partneri', 'PartnersController@index')->name('partners');
+
     Route::get('/kontakty', 'ContactsController@index')->name('contacts');
 });
 
@@ -25,6 +27,8 @@ Route::prefix(config('variants.variant_2.route_prefix'))->group(function () {
     Route::get('/cenik', 'PriceListController@index')->name(config('variants.variant_2.route_prefix_dash') . 'price-list');
 
     Route::get('/stravovani', 'EatingController@index')->name(config('variants.variant_2.route_prefix_dash') . 'eating');
+
+    Route::get('/partneri', 'PartnersController@index')->name(config('variants.variant_2.route_prefix_dash') . 'partners');
 
     Route::get('/kontakty', 'ContactsController@index')->name(config('variants.variant_2.route_prefix_dash') . 'contacts');
 });

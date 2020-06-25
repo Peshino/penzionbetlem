@@ -79,16 +79,21 @@
                 <div class="row">
                     <div class="col-lg pb-2 text-justify">
                         <p>
-                            Spolupracujeme s restaurantem „Hospoda U Sv. Huberta“, který je vzdálen od penzionu 40 m a
-                            kde podávají jídla české kuchyně. Hlavní část restaurantu nabízí 60 míst,
-                            nekuřácký salonek 8 míst, klub pod střechou 28 míst a zahrádka v letních měsících 80 míst.
+                            V areálu skanzenu se nachází restaurace <strong>Hospoda u sv. Huberta</strong>.
                         </p>
                         <p>
-                            Na přání našich zákazníků lze zajistit rezervace míst v restaurantu „Hospoda U Sv. Huberta“
-                            nebo v restaurantu „U Tvrze“, který je vzdále 300 m od penzionu.
+                            Podávají zde jídla české
+                            kuchyně.
                         </p>
                         <p>
-                            Bohaté snídaně jsou podávány přímo na penzionu.
+                            V restauraci je celkem cca 80 míst a v letních měsících 60 míst na venkovní
+                            zahrádce.
+                        </p>
+                        <p>
+                            Restaurace je nekuřácká.
+                        </p>
+                        <p>
+                            Vzdálenost od penzionu je 50 metrů.
                         </p>
                     </div>
                     <div class="col-lg pb-2">
@@ -119,7 +124,115 @@
             @endif
 
             @if ($variant2)
-
+            <div class="first-part">
+                <div class="pb-2">
+                    <h4 class="color-{{ config('variants.name') }}">vlastní - společná zařízená kuchyňka</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <ul class="pl-4">
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; kuchyňská linka
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; dvě rohové masivní lavice pro 20 osob
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; kávovar Expresso
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; elektrický dvouplotýnkový vařič
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; dvě varné konvice
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; topinkovač
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; dvě ledničky
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; mikrovlnná trouba
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; černé i bílé nádobí
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; příbory a sklenice
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; TV s nekódovaným satelitním příjmem
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg pb-2">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_1.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_1.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow"
+                                alt="{{ config('variants.name') }} - kuchyňka">
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_2.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_2.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow"
+                                alt="{{ config('variants.name') }} - kuchyňka">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-part">
+                <div class="pb-2">
+                    <h4 class="color-{{ config('variants.name') }}">veřejné stravování</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg pb-2 text-justify">
+                        <p>
+                            V areálu skanzenu se nachází restaurace <strong>Hospoda u sv. Huberta</strong>.
+                        </p>
+                        <p>
+                            Podávají zde jídla české
+                            kuchyně.
+                        </p>
+                        <p>
+                            V restauraci je celkem cca 80 míst a v letních měsících 60 míst na venkovní
+                            zahrádce.
+                        </p>
+                        <p>
+                            Restaurace je nekuřácká.
+                        </p>
+                        <p>
+                            Vzdálenost od penzionu je 50 metrů.
+                        </p>
+                    </div>
+                    <div class="col-lg pb-2">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_3.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_3.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow" alt="Hospoda u Sv. Huberta">
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_4.png') }}" data-toggle="lightbox"
+                            data-gallery="gallery">
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_4.png') }}"
+                                class="align-middle img-fluid rounded hover-shadow" alt="Hospoda u Sv. Huberta">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="last-part">
+                <p>Pro více informací o cenách stravování přejděte do sekce
+                    <a href="{{ route(config('variants.route_prefix_dash') . 'price-list') }}">
+                        <span class="text-uppercase">
+                            @lang('messages.price_list')
+                        </span>
+                    </a>
+                </p>
+            </div>
             @endif
         </div>
     </div>

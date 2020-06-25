@@ -559,6 +559,18 @@
         }
     }
 
+    .accommodation-text {
+        line-height: 2.2rem;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 1200px) {
+        .accommodation-text {
+            line-height: 1.8rem;
+            font-size: 0.9rem;
+        }
+    }
+
     .facebook-plugin {
         width: 100%;
     }

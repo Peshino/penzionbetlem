@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'partners') }}">
                             <span class="align-middle">@lang('messages.partners')</span>
                         </a>
                     </li>
