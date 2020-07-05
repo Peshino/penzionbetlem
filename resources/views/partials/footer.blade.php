@@ -11,9 +11,3 @@
         </p>
     </div>
 </footer>
-
-@section('scripts')
-<script>
-
-</script>
-@endsection

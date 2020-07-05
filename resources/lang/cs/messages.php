@@ -54,11 +54,15 @@ return [
     'edit_post' => 'Upravit článek',
     'profile' => 'Profil',
     'edit_profile' => 'Upravit profil',
-    'date' => 'Datum',
-    'email' => 'E-mail',
-    'firstname' => 'Jméno',
-    'lastname' => 'Příjmení',
-    'nickname' => 'Přezdívka',
+    'date' => 'datum',
+    'email' => 'e-mail',
+    'firstname' => 'jméno',
+    'lastname' => 'příjmení',
+    'telephone' => 'telefon',
+    'date_of_stay' => 'datum pobytu',
+    'notes_to_order' => 'poznámky k objednávce',
+    'agreement' => 'souhlasím se zpracováním údajů z tohoto formuláře',
+    'send_order' => 'odeslat objednávku',
 
     'new' => 'nový',
 
@@ -66,16 +70,24 @@ return [
     'accommodation_type_2' => 'třílůžkový pokoj',
     'accommodation_type_3' => 'apartmán',
 
+    'terms_conditions' => 'obchodní podmínky',
+    'reservation_form' => 'objednávkový formulář',
+
+    'reception' => 'recepce',
+    'map' => 'mapa',
+
     'contacts_penzion_address' => 'Veleslavínova 1612, Hlinsko 539 01',
     'contacts_penzion_company' => 'Betlém Hlinsko, spol. s r.o.',
     'contacts_penzion_company_address' => 'Resslova 1521, Hlinsko 539 01',
     'contacts_penzion_company_telephone' => '+420 775 006 700',
+    'contacts_penzion_company_email' => 'penzion.betlem.hlinsko at seznam.cz',
     'contacts_penzion_company_ic' => 'IČ.: 260 08 971',
 
     'contacts_chalupy_address' => 'Veleslavínova 1612, Hlinsko 539 01',
     'contacts_chalupy_company' => 'Betlém Hlinsko, spol. s r.o.',
     'contacts_chalupy_company_address' => 'Resslova 1521, Hlinsko 539 01',
     'contacts_chalupy_company_telephone' => '+420 775 006 700',
+    'contacts_chalupy_company_email' => 'penzion.betlem.hlinsko at seznam.cz',
     'contacts_chalupy_company_ic' => 'IČ.: 260 08 971',
 
 

@@ -109,12 +109,12 @@
                             </blockquote>
                         </div>
                     </div>
-                    <div class="col-lg text-center home-contacts">
+                    <div class="col-lg text-center contacts">
                         <div class="pb-4">
                             <img src="{{ asset('img/logo_' . config('variants.name') . '_contacts.png') }}"
                                 class="align-middle img-fluid" alt="{{ config('variants.name') }} logo">
                         </div>
-                        <div class="pb-5">
+                        <div class="pb-4">
                             <h4 class="text-uppercase">
                                 <strong>
                                     {{ config('variants.name') }} BETLÉM
@@ -124,8 +124,17 @@
                                 <i class="fas fa-map-marker-alt"></i> &nbsp;
                                 @lang('messages.contacts_' . config('variants.name') . '_address')
                             </p>
+                            <p class="py-1">
+                                <i class="far fa-envelope"></i> &nbsp;
+                                <span class="email-replace">@lang('messages.contacts_' . config('variants.name') .
+                                    '_company_email')</span>
+                            </p>
+                            <p class="py-1">
+                                <i class="fas fa-phone-alt"></i> &nbsp;
+                                @lang('messages.contacts_' . config('variants.name') . '_company_telephone')
+                            </p>
                         </div>
-                        <div class="pb-4">
+                        <div class="pb-3 text-secondary">
                             <h4>
                                 <strong>
                                     @lang('messages.contacts_' . config('variants.name') . '_company')
@@ -136,18 +145,16 @@
                                 @lang('messages.contacts_' . config('variants.name') . '_company_address')
                             </p>
                             <p class="py-1">
-                                <i class="fas fa-phone-alt"></i> &nbsp;
-                                @lang('messages.contacts_' . config('variants.name') . '_company_telephone')
-                            </p>
-                            <p class="py-1">
                                 <i class="far fa-id-badge"></i> &nbsp;
                                 @lang('messages.contacts_' . config('variants.name') . '_company_ic')
                             </p>
                         </div>
                         <div>
                             <p>
-                                <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}"><span
-                                        class="align-middle">@lang('messages.contacts')</span></a>
+                                <strong>
+                                    <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}"><span
+                                            class="align-middle">@lang('messages.contacts')</span></a>
+                                </strong>
                             </p>
                         </div>
                     </div>
@@ -156,4 +163,13 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+<script>
+    $(document).ready(() => {
+        var emailReplace = $('.email-replace').html().replace(' at ', '@');
+        $('.email-replace').html(emailReplace);
+    });
+</script>
 @endsection

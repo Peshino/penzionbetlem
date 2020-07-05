@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'reservation') }}">
                             <span class="align-middle">@lang('messages.reservation')</span>
                         </a>
                     </li>

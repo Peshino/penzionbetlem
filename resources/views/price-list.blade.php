@@ -269,11 +269,13 @@
 
             <div class="last-part">
                 <p>Pro více informací přejděte do sekce
-                    <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
-                        <span class="text-uppercase">
-                            @lang('messages.contacts')
-                        </span>
-                    </a>
+                    <strong>
+                        <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
+                            <span class="text-uppercase">
+                                @lang('messages.contacts')
+                            </span>
+                        </a>
+                    </strong>
                 </p>
             </div>
             @endif
@@ -486,11 +488,13 @@
 
             <div class="last-part">
                 <p>Pro více informací přejděte do sekce
-                    <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
-                        <span class="text-uppercase">
-                            @lang('messages.contacts')
-                        </span>
-                    </a>
+                    <strong>
+                        <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
+                            <span class="text-uppercase">
+                                @lang('messages.contacts')
+                            </span>
+                        </a>
+                    </strong>
                 </p>
             </div>
             @endif

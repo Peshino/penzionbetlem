@@ -74,4 +74,6 @@ $(document).ready(() => {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+
+    $('.floating-label .custom-select, .floating-label .form-control').floatinglabel();
 });
