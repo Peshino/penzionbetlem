@@ -76,4 +76,62 @@ $(document).ready(() => {
     });
 
     $('.floating-label .custom-select, .floating-label .form-control').floatinglabel();
+
+    $('input[name="datefilter"]').daterangepicker({
+        autoUpdateInput: false,
+        autoApply: true,
+        drops: 'auto',
+        locale: {
+            applyLabel: 'Potvrdit',
+            cancelLabel: 'Zrušit',
+            fromLabel: 'od',
+            toLabel: 'do',
+            customRangeLabel: 'vlastní',
+            weekLabel: 'W',
+            daysOfWeek: [
+                'Ne',
+                'Po',
+                'Út',
+                'St',
+                'Čt',
+                'Pá',
+                'So'
+            ],
+            monthNames: [
+                'Leden',
+                'Únor',
+                'Březen',
+                'Duben',
+                'Květen',
+                'Červen',
+                'Červenec',
+                'Srpen',
+                'Září',
+                'Říjen',
+                'Listopad',
+                'Prosinec'
+            ],
+            firstDay: 1
+        },
+    });
+
+    $('input[name="datefilter"]').on('apply.daterangepicker', function (ev, picker) {
+        $(this).val(picker.startDate.format('D. M. YYYY') + ' - ' + picker.endDate.format('D. M. YYYY'));
+        checkForInput(this);
+    });
+
+    $('input[name="datefilter"]').on('cancel.daterangepicker', function (ev, picker) {
+        $(this).val('');
+        checkForInput(this);
+    });
+
+    function checkForInput(element) {
+        const $div = $(element).closest('div');
+
+        if ($(element).val().length > 0) {
+            $div.addClass('has-value');
+        } else {
+            $div.removeClass('has-value');
+        }
+    }
 });

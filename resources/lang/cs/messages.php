@@ -77,18 +77,20 @@ return [
     'map' => 'mapa',
 
     'contacts_penzion_address' => 'Veleslavínova 1612, Hlinsko 539 01',
-    'contacts_penzion_company' => 'Betlém Hlinsko, spol. s r.o.',
+    'contacts_penzion_telephone' => '+420 775 006 700',
+    'contacts_penzion_email' => 'penzion.betlem.hlinsko at seznam.cz',
+    'contacts_penzion_company_name' => 'Betlém Hlinsko, spol. s r.o.',
     'contacts_penzion_company_address' => 'Resslova 1521, Hlinsko 539 01',
-    'contacts_penzion_company_telephone' => '+420 775 006 700',
-    'contacts_penzion_company_email' => 'penzion.betlem.hlinsko at seznam.cz',
     'contacts_penzion_company_ic' => 'IČ.: 260 08 971',
+    'contacts_penzion_company_publication' => 'zapsán u Krajského soudu v HK (spis C 19805)',
 
     'contacts_chalupy_address' => 'Veleslavínova 1612, Hlinsko 539 01',
-    'contacts_chalupy_company' => 'Betlém Hlinsko, spol. s r.o.',
+    'contacts_chalupy_telephone' => '+420 775 006 700',
+    'contacts_chalupy_email' => 'penzion.betlem.hlinsko at seznam.cz',
+    'contacts_chalupy_company_name' => 'Betlém Hlinsko, spol. s r.o.',
     'contacts_chalupy_company_address' => 'Resslova 1521, Hlinsko 539 01',
-    'contacts_chalupy_company_telephone' => '+420 775 006 700',
-    'contacts_chalupy_company_email' => 'penzion.betlem.hlinsko at seznam.cz',
     'contacts_chalupy_company_ic' => 'IČ.: 260 08 971',
+    'contacts_chalupy_company_publication' => 'zapsán u Krajského soudu v HK (spis C 19805)',
 
 
 

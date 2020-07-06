@@ -58,15 +58,8 @@
                         </div>
                         <div class="floating-label">
                             <label for="date-of-stay">@lang('messages.date_of_stay')</label>
-                            <input class="form-control" id="date-of-stay" name="dateOfStay" type="text" value=""
-                                required />
-                        </div>
-                        <div class="form-group">
-                            <div class="floating-label">
-                                <label for="notes-to-order">@lang('messages.notes_to_order')</label>
-                                <textarea class="form-control" rows="4" id="notes-to-order"
-                                    name="notesToOrder"></textarea>
-                            </div>
+                            <input class="form-control input-daterangepicker" id="date-of-stay" name="datefilter"
+                                type="text" value="" required />
                         </div>
                     </div>
                     <div class="form-group">

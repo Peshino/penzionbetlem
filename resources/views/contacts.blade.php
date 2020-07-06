@@ -27,11 +27,11 @@
                             <p class="py-1">
                                 <i class="far fa-envelope"></i> &nbsp;
                                 <span class="email-replace">@lang('messages.contacts_' . config('variants.name') .
-                                    '_company_email')</span>
+                                    '_email')</span>
                             </p>
                             <p class="py-1">
                                 <i class="fas fa-phone-alt"></i> &nbsp;
-                                @lang('messages.contacts_' . config('variants.name') . '_company_telephone')
+                                @lang('messages.contacts_' . config('variants.name') . '_telephone')
                             </p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="pb-3 text-secondary">
                             <h4>
                                 <strong>
-                                    @lang('messages.contacts_' . config('variants.name') . '_company')
+                                    @lang('messages.contacts_' . config('variants.name') . '_company_name')
                                 </strong>
                             </h4>
                             <p class="py-1">
@@ -47,8 +47,8 @@
                                 @lang('messages.contacts_' . config('variants.name') . '_company_address')
                             </p>
                             <p class="py-1">
-                                <i class="fas fa-phone-alt"></i> &nbsp;
-                                @lang('messages.contacts_' . config('variants.name') . '_company_telephone')
+                                <i class="far fa-file-alt"></i> &nbsp;
+                                @lang('messages.contacts_' . config('variants.name') . '_company_publication')
                             </p>
                             <p class="py-1">
                                 <i class="far fa-id-badge"></i> &nbsp;
