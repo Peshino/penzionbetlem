@@ -13,7 +13,7 @@
             </div>
             <div class="first-part">
                 <div class="row">
-                    <div class="col-lg text-center contacts">
+                    <div class="col-md text-center contacts">
                         <div class="pb-3">
                             <h4 class="text-uppercase">
                                 <strong>
@@ -35,7 +35,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg text-center contacts">
+                    <div class="col-md text-center contacts">
                         <div class="pb-3 text-secondary">
                             <h4>
                                 <strong>
@@ -98,13 +98,4 @@
         </div>
     </div>
 </div>
-@endsection
-
-@section('scripts')
-<script>
-    $(document).ready(() => {
-        var emailReplace = $('.email-replace').html().replace(' at ', '@');
-        $('.email-replace').html(emailReplace);
-    });
-</script>
 @endsection

@@ -164,12 +164,3 @@
     </div>
 </div>
 @endsection
-
-@section('scripts')
-<script>
-    $(document).ready(() => {
-        var emailReplace = $('.email-replace').html().replace(' at ', '@');
-        $('.email-replace').html(emailReplace);
-    });
-</script>
-@endsection

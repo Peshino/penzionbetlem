@@ -8,6 +8,9 @@
 <div class="card mb-4">
     <div class="card-body">
         <div class="content">
+            <div class="pb-4">
+                <h3>@lang('messages.partners')</h3>
+            </div>
             <div class="row text-center">
                 <div class="col-md pb-3 align-self-center">
                     <a href="http://www.mashlinecko.cz/__2019/kvalita-hlinecka" target="_blank">

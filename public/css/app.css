@@ -11287,8 +11287,8 @@ html {
   margin-bottom: 0.3rem;
 }
 
-#main .z-index-10000 {
-  z-index: 10000;
+#main .z-index-10 {
+  z-index: 10;
 }
 
 #main .proceed-link {
@@ -11907,17 +11907,17 @@ html {
 }
 
 #main .form-label-group input:not(:-moz-placeholder-shown) {
-  padding-top: calc( var(--input-padding-y) + var(--input-padding-y) * (2 / 3) );
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
   padding-bottom: calc(var(--input-padding-y) / 3);
 }
 
 #main .form-label-group input:not(:-ms-input-placeholder) {
-  padding-top: calc( var(--input-padding-y) + var(--input-padding-y) * (2 / 3) );
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
   padding-bottom: calc(var(--input-padding-y) / 3);
 }
 
 #main .form-label-group input:not(:placeholder-shown) {
-  padding-top: calc( var(--input-padding-y) + var(--input-padding-y) * (2 / 3) );
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
   padding-bottom: calc(var(--input-padding-y) / 3);
 }
 
@@ -11940,6 +11940,28 @@ html {
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
   color: #777;
+}
+
+#main img.gallery {
+  width: 16rem;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+#main .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 footer {

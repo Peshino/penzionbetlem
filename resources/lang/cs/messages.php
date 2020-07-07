@@ -59,19 +59,23 @@ return [
     'firstname' => 'jméno',
     'lastname' => 'příjmení',
     'telephone' => 'telefon',
-    'date_of_stay' => 'datum pobytu',
-    'notes_to_order' => 'poznámky k objednávce',
+    'arrival_departure_date' => 'datum příjezdu a odjezdu',
+    'reservation_notes' => 'poznámky k rezervaci',
     'agreement' => 'souhlasím se zpracováním údajů z tohoto formuláře',
-    'send_order' => 'odeslat objednávku',
+    'send_reservation' => 'odeslat rezervaci',
 
     'new' => 'nový',
 
     'accommodation_type_1' => 'dvoulůžkový pokoj',
     'accommodation_type_2' => 'třílůžkový pokoj',
     'accommodation_type_3' => 'apartmán',
+    
+    'interior' => 'interiér',
+    'exterior' => 'exteriér',
+    'video' => 'video',
 
     'terms_conditions' => 'obchodní podmínky',
-    'reservation_form' => 'objednávkový formulář',
+    'reservation_form' => 'rezervační formulář',
 
     'reception' => 'recepce',
     'map' => 'mapa',

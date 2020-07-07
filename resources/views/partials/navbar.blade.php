@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
+                        <a class="nav-link" href="{{ route(config('variants.route_prefix_dash') . 'photo-gallery') }}">
                             <span class="align-middle">@lang('messages.photo_gallery')</span>
                         </a>
                     </li>
@@ -61,7 +61,7 @@
                 <a class="nav-link" href="{{ route(config('variants.variant_1.route_prefix_dash') . 'home') }}"><span
                         class="align-middle">@lang('messages.penzion_name')</span></a>
             </div>
-            <div class="col-md-auto position-absolute z-index-10000 navbar-logo">
+            <div class="col-md-auto position-absolute z-index-10 navbar-logo">
                 <a href="{{ route(config('variants.route_prefix_dash') . 'home') }}">
                     <img src="{{ asset('img/logo_' . config('variants.name') . '.png') }}"
                         alt="{{ config('variants.name') }} logo">
@@ -77,7 +77,7 @@
 
 @section('scripts')
 <script>
-    var siteVariant2RoutePrefix = '{{ env('SITE_VARIANT_2_ROUTE_PREFIX') }}', 
+    var siteVariant2RoutePrefix = '{{ config("variants.variant_2.route_prefix") }}', 
         actualUrl = window.location.href;
 
         if (actualUrl.indexOf(siteVariant2RoutePrefix) >= 0) {

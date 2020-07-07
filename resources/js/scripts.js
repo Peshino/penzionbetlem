@@ -1,57 +1,57 @@
 $(document).ready(() => {
-    if (Cookies.get("gdpr_cookie_bar") === "1") {
-        $("#cookie-bar")
-            .addClass("d-none")
-            .removeClass("d-flex");
+    if (Cookies.get('gdpr_cookie_bar') === '1') {
+        $('#cookie-bar')
+            .addClass('d-none')
+            .removeClass('d-flex');
     } else {
-        $("#cookie-bar")
-            .addClass("d-flex")
-            .removeClass("d-none");
+        $('#cookie-bar')
+            .addClass('d-flex')
+            .removeClass('d-none');
     }
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    $(".toast").toast("show");
+    $('.toast').toast('show');
 
-    $("#cookie-bar-button").click(() => {
-        Cookies.set("gdpr_cookie_bar", "1", {
+    $('#cookie-bar-button').click(() => {
+        Cookies.set('gdpr_cookie_bar', '1', {
             expires: 365
         });
-        $("#cookie-bar")
-            .addClass("d-none")
-            .removeClass("d-flex");
+        $('#cookie-bar')
+            .addClass('d-none')
+            .removeClass('d-flex');
     });
 
-    // $(".navbar-nav .nav-link").click(() => {
-    //     $(".navbar-nav .nav-link").removeClass("active");
-    //     $(this).addClass("active");
+    // $('.navbar-nav .nav-link').click(() => {
+    //     $('.navbar-nav .nav-link').removeClass('active');
+    //     $(this).addClass('active');
     // });
 
     setTimeout(() => {
-        $(".alert").fadeOut(750);
+        $('.alert').fadeOut(750);
     }, 2500);
 
-    if ($("body textarea").length) {
-        const textareaId = $("body textarea").attr("id");
-        const $textarea = $("#" + textareaId);
-        const $div = $textarea.closest("div");
+    if ($('body textarea').length) {
+        const textareaId = $('body textarea').attr('id');
+        const $textarea = $('#' + textareaId);
+        const $div = $textarea.closest('div');
 
         if (localStorage.getItem(textareaId) !== null) {
             $textarea.val(localStorage.getItem(textareaId));
 
             if ($textarea.val().length > 0) {
-                $div.addClass("has-value");
+                $div.addClass('has-value');
             } else {
-                $div.removeClass("has-value");
+                $div.removeClass('has-value');
             }
         }
 
-        $textarea.on("input", event => {
+        $textarea.on('input', event => {
             localStorage.setItem(textareaId, $textarea.val());
         });
 
-        $("body form").submit(event => {
-            const $inputs = $("body form textarea");
+        $('body form').submit(event => {
+            const $inputs = $('body form textarea');
             $inputs.each(item => {
                 localStorage.removeItem($inputs[item].id);
             });
@@ -77,6 +77,7 @@ $(document).ready(() => {
 
     $('.floating-label .custom-select, .floating-label .form-control').floatinglabel();
 
+    // Date Range Picker
     $('input[name="datefilter"]').daterangepicker({
         autoUpdateInput: false,
         autoApply: true,
@@ -133,5 +134,10 @@ $(document).ready(() => {
         } else {
             $div.removeClass('has-value');
         }
+    }
+
+    if ($('.email-replace').length > 0) {
+        var emailReplace = $('.email-replace').html().replace(' at ', '@');
+        $('.email-replace').html(emailReplace);
     }
 });

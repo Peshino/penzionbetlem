@@ -42,34 +42,45 @@
                     <div class="form-group">
                         <div class="floating-label">
                             <label for="email">@lang('messages.email')</label>
-                            <input class="form-control" id="email" name="email" type="email" value="" required />
+                            <input class="form-control" id="email" name="email" type="email" value="{{ old('email') }}"
+                                required />
                         </div>
                         <div class="floating-label">
                             <label for="firstname">@lang('messages.firstname')</label>
-                            <input class="form-control" id="firstname" name="firstname" type="text" value="" required />
+                            <input class="form-control" id="firstname" name="firstname" type="text"
+                                value="{{ old('firstname') }}" required />
                         </div>
                         <div class="floating-label">
                             <label for="lastname">@lang('messages.lastname')</label>
-                            <input class="form-control" id="lastname" name="lastname" type="text" value="" required />
+                            <input class="form-control" id="lastname" name="lastname" type="text"
+                                value="{{ old('lastname') }}" required />
                         </div>
                         <div class="floating-label">
                             <label for="telephone">@lang('messages.telephone')</label>
-                            <input class="form-control" id="telephone" name="telephone" type="text" value="" required />
+                            <input class="form-control" id="telephone" name="telephone" type="text"
+                                value="{{ old('telephone') }}" required />
                         </div>
                         <div class="floating-label">
-                            <label for="date-of-stay">@lang('messages.date_of_stay')</label>
-                            <input class="form-control input-daterangepicker" id="date-of-stay" name="datefilter"
-                                type="text" value="" required />
+                            <label for="arrival-departure-date">@lang('messages.arrival_departure_date')</label>
+                            <input class="form-control input-daterangepicker" id="arrival-departure-date"
+                                name="datefilter" type="text" value="{{ old('datefilter') }}" required />
+                        </div>
+                        <div class="form-group">
+                            <div class="floating-label">
+                                <label for="reservation-notes">@lang('messages.reservation_notes')</label>
+                                <textarea class="form-control" rows="4" id="reservation-notes"
+                                    name="reservationNotes">{{ old('reservationNotes') }}</textarea>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="agreement" name="agreement">
+                            <input type="checkbox" class="custom-control-input" id="agreement" name="agreement" required>
                             <label class="custom-control-label" for="agreement">@lang('messages.agreement')</label>
                         </div>
                     </div>
                     <div class="form-group text-center mt-1">
-                        <button type="submit" class="btn">@lang('messages.send_order')</button>
+                        <button type="submit" class="btn">@lang('messages.send_reservation')</button>
                     </div>
                     @include('partials.errors')
                 </form>
