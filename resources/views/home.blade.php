@@ -24,7 +24,7 @@
                             <span class="text-uppercase"><strong>{{ config('variants.name') }} BETLÉM</strong></span> je
                             umístěn v centru města Hlinska ve stejnojmenném skanzenu, který je součástí Souboru
                             lidových staveb Vysočina. Z části roubená a z části zděná
-                            budova byla postavena v roce 2020 v duchu původní
+                            budova byla postavena v roce 2004 v duchu původní
                             horácké architektury.
                             @endif
                             @if ($variant2)
