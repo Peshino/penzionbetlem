@@ -73,6 +73,8 @@ return [
     'interior' => 'interiér',
     'exterior' => 'exteriér',
     'video' => 'video',
+    
+    'hell_certovina' => 'Peklo Čertovina',
 
     'terms_conditions' => 'obchodní podmínky',
     'reservation_form' => 'rezervační formulář',

@@ -16,6 +16,8 @@ Route::prefix('/')->group(function () {
 
     Route::get('/fotogalerie', 'PhotoGalleryController@index')->name('photo-gallery');
 
+    Route::get('/tipy-na-vylety', 'TipsForTripsController@index')->name('tips-for-trips');
+
     Route::get('/rezervace', 'ReservationController@index')->name('reservation');
 
     Route::get('/partneri', 'PartnersController@index')->name('partners');
@@ -33,6 +35,8 @@ Route::prefix(config('variants.variant_2.route_prefix'))->group(function () {
     Route::get('/stravovani', 'EatingController@index')->name(config('variants.variant_2.route_prefix_dash') . 'eating');
 
     Route::get('/fotogalerie', 'PhotoGalleryController@index')->name(config('variants.variant_2.route_prefix_dash') . 'photo-gallery');
+
+    Route::get('/tipy-na-vylety', 'TipsForTripsController@index')->name(config('variants.variant_2.route_prefix_dash') . 'tips-for-trips');
 
     Route::get('/rezervace', 'ReservationController@index')->name(config('variants.variant_2.route_prefix_dash') . 'reservation');
 

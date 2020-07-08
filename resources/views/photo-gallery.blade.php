@@ -22,7 +22,7 @@
                         @php
                         $key++
                         @endphp
-                        <div class="col-1-md p-2">
+                        <div class="col-auto p-2">
                             <a href="{{ asset('storage/' . $photo) }}" data-toggle="lightbox" data-gallery="gallery">
                                 <img src="{{ asset('storage/' . $photo) }}"
                                     class="align-middle img-fluid rounded hover-shadow gallery" alt="foto {{ $key }}">
@@ -44,7 +44,7 @@
                         @php
                         $key++
                         @endphp
-                        <div class="col-1-md p-2">
+                        <div class="col-auto p-2">
                             <a href="{{ asset('storage/' . $photo) }}" data-toggle="lightbox" data-gallery="gallery">
                                 <img src="{{ asset('storage/' . $photo) }}"
                                     class="align-middle img-fluid rounded hover-shadow gallery" alt="foto {{ $key }}">

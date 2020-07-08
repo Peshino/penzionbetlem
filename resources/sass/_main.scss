@@ -20,13 +20,13 @@
 
     .content {
         a {
-            color: #1d1d1d;
-            text-decoration: none;
+            color: #2e2e2e;
+            text-decoration: underline;
         }
 
         a:hover {
             color: #000000;
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         ul {
@@ -637,16 +637,6 @@
 
     .contacts p {
         font-size: 1rem;
-    }
-
-    .contacts a {
-        font-size: 1rem;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-
-    .contacts a:hover {
-        text-decoration: underline;
     }
 
     .form-signin {

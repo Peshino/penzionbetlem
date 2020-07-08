@@ -114,11 +114,13 @@
             </div>
             <div class="last-part">
                 <p>Pro více informací o cenách stravování přejděte do sekce
-                    <a href="{{ route(config('variants.route_prefix_dash') . 'price-list') }}">
-                        <span class="text-uppercase">
-                            @lang('messages.price_list')
-                        </span>
-                    </a>
+                    <strong>
+                        <a href="{{ route(config('variants.route_prefix_dash') . 'price-list') }}">
+                            <span class="text-uppercase">
+                                @lang('messages.price_list')
+                            </span>
+                        </a>
+                    </strong>
                 </p>
             </div>
             @endif

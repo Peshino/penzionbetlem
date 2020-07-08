@@ -152,8 +152,12 @@
                         <div>
                             <p>
                                 <strong>
-                                    <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}"><span
-                                            class="align-middle">@lang('messages.contacts')</span></a>
+                                    <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
+                                        <span
+                                            class="align-middle text-uppercase">
+                                            @lang('messages.contacts')
+                                        </span>
+                                    </a>
                                 </strong>
                             </p>
                         </div>

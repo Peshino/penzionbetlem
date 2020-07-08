@@ -11261,13 +11261,13 @@ html {
 }
 
 #main .content a {
-  color: #1d1d1d;
-  text-decoration: none;
+  color: #2e2e2e;
+  text-decoration: underline;
 }
 
 #main .content a:hover {
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #main .content ul {
@@ -11845,16 +11845,6 @@ html {
 
 #main .contacts p {
   font-size: 1rem;
-}
-
-#main .contacts a {
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-#main .contacts a:hover {
-  text-decoration: underline;
 }
 
 #main .form-signin {
