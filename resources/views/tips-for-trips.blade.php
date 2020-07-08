@@ -22,31 +22,31 @@
                         <ul class="pl-4">
                             <li>
                                 <i class="fas fa-chevron-right"></i> &nbsp;
-                                <a href="{{ asset('pdf/Geopark_cykloturisticka.pdf') }}" target="_blank">
+                                <a href="{{ asset('storage/pdf/Geopark_cykloturisticka.pdf') }}" target="_blank">
                                     Geoturistická mapa Chrudimska-Hlinecka
                                 </a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i> &nbsp;
-                                <a href="{{ asset('pdf/Geopark_geoturisticka.pdf') }}" target="_blank">
+                                <a href="{{ asset('storage/pdf/Geopark_geoturisticka.pdf') }}" target="_blank">
                                     Cykloturistická mapa Chrudimska-Hlinecka
                                 </a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i> &nbsp;
-                                <a href="{{ asset('pdf/Pondelni_vylety.pdf') }}" target="_blank">
+                                <a href="{{ asset('storage/pdf/Pondelni_vylety.pdf') }}" target="_blank">
                                     Pondělní výlety
                                 </a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i> &nbsp;
-                                <a href="{{ asset('pdf/Top_mista.pdf') }}" target="_blank">
+                                <a href="{{ asset('storage/pdf/Top_mista.pdf') }}" target="_blank">
                                     TOP místa Chrudimska-Hlinecka
                                 </a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i> &nbsp;
-                                <a href="{{ asset('pdf/Vylety_v_desti.pdf') }}" target="_blank">
+                                <a href="{{ asset('storage/pdf/Vylety_v_desti.pdf') }}" target="_blank">
                                     Výlety v dešti
                                 </a>
                             </li>
@@ -67,13 +67,13 @@
                         <ul class="pl-4">
                             <li>
                                 <i class="fas fa-chevron-right"></i> &nbsp;
-                                <a href="{{ asset('pdf/Katalog_Betlem_Hlinsko.pdf') }}" target="_blank">
+                                <a href="{{ asset('storage/pdf/Katalog_Betlem_Hlinsko.pdf') }}" target="_blank">
                                     Katalog Betlém Hlinsko
                                 </a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i> &nbsp;
-                                <a href="{{ asset('pdf/Oddychove_stezky_Hlinsko.pdf') }}" target="_blank">
+                                <a href="{{ asset('storage/pdf/Oddychove_stezky_Hlinsko.pdf') }}" target="_blank">
                                     Oddychové stezky města Hlinska
                                 </a>
                             </li>
