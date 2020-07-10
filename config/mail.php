@@ -88,6 +88,10 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    'to_reservation' => [
+        'address' => env('MAIL_TO_ADDRESS_RESERVATION', 'penzion.betlem.hlinsko@seznam.cz'),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings

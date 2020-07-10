@@ -44,3 +44,5 @@ Route::prefix(config('variants.variant_2.route_prefix'))->group(function () {
 
     Route::get('/kontakty', 'ContactsController@index')->name(config('variants.variant_2.route_prefix_dash') . 'contacts');
 });
+
+Route::post('/send-reservation-mail', 'ReservationController@sendReservationMail')->name('send-reservation-mail');

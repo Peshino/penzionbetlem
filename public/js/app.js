@@ -53700,6 +53700,8 @@ $(document).ready(function () {
     var emailReplace = $('.email-replace').html().replace(' at ', '@');
     $('.email-replace').html(emailReplace);
   }
+
+  $('.toast').toast('show');
 });
 
 /***/ }),

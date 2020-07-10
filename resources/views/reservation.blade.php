@@ -36,7 +36,7 @@
                 <h4 class="color-{{ config('variants.name') }}">
                     @lang('messages.reservation_form')
                 </h4>
-                <form method="POST" action="" autocomplete="off">
+                <form method="POST" action="{{ route('send-reservation-mail') }}" autocomplete="off">
                     @csrf
                     @method('POST')
                     <div class="form-group">
@@ -75,9 +75,16 @@
                     </div>
                     <div class="form-group">
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="agreement" name="agreement" required>
+                            <input type="checkbox" class="custom-control-input" id="agreement" name="agreement"
+                                required>
                             <label class="custom-control-label" for="agreement">@lang('messages.agreement')</label>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" id="variant" name="variant" value="{{ config('variants.name') }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" id="variant-route-prefix" name="variant_route_prefix" value="{{ config('variants.route_prefix') }}">
                     </div>
                     <div class="form-group text-center mt-1">
                         <button type="submit" class="btn">@lang('messages.send_reservation')</button>
