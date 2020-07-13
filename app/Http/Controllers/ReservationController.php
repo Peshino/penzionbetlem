@@ -32,7 +32,7 @@ class ReservationController extends Controller
             'reservationNotes' => '',
             'agreement' => 'required',
             'variant' => 'required',
-            'variant_route_prefix' => 'required',
+            'variant_route_prefix' => '',
         ]);
 
         if (Mail::to(config('mail.to_reservation.address'))->send(new Reservation($attributes)) === null) {
