@@ -45,9 +45,7 @@
                         <tr class="text-center">
                             <th colspan="3">
                                 <small>
-                                    ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5
-                                    dnech
+                                    ceny ubytování bez stravy
                                 </small>
                             </th>
                         </tr>
@@ -95,9 +93,7 @@
                         <tr class="text-center">
                             <th colspan="3">
                                 <small>
-                                    ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5
-                                    dnech
+                                    ceny ubytování bez stravy
                                 </small>
                             </th>
                         </tr>
@@ -140,9 +136,7 @@
                         <tr class="text-center">
                             <th colspan="3">
                                 <small>
-                                    ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5
-                                    dnech
+                                    ceny ubytování bez stravy
                                 </small>
                             </th>
                         </tr>
@@ -282,49 +276,9 @@
 
             @if ($variant2)
             <div class="first-part">
+                
                 <div class="pb-2">
-                    <h4 class="color-{{ config('variants.name') }}" class="color-{{ config('variants.name') }}">
-                        @lang('messages.accommodation_type_1') - standard
-                    </h4>
-                </div>
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">počet osob | délka pobytu</th>
-                            <th scope="col">1 noc (Booking)</th>
-                            <th scope="col">2 a více nocí</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1 osoba</th>
-                            <td>600 Kč / noc</td>
-                            <td>500 Kč / noc</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2 osoby</th>
-                            <td>950 Kč / noc</td>
-                            <td>850 Kč / noc</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3 osoby (na přistýlce)</th>
-                            <td>1150 Kč / noc</td>
-                            <td>1050 Kč / noc</td>
-                        </tr>
-                        <tr class="text-center">
-                            <th colspan="3">
-                                <small>
-                                    ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5
-                                    dnech
-                                </small>
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="pb-2">
-                    <h4 class="color-{{ config('variants.name') }}">@lang('messages.accommodation_type_3') - standard
+                    <h4 class="color-{{ config('variants.name') }}">@lang('messages.accommodation_type_1') - standard
                     </h4>
                 </div>
                 <table class="table table-hover">
@@ -359,9 +313,7 @@
                         <tr class="text-center">
                             <th colspan="3">
                                 <small>
-                                    ceny ubytování bez stravy |
-                                    výměna lůžkovin a ručníku po 5
-                                    dnech
+                                    ceny ubytování bez stravy
                                 </small>
                             </th>
                         </tr>

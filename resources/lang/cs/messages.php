@@ -69,6 +69,7 @@ return [
     'accommodation_type_1' => 'dvoulůžkový pokoj',
     'accommodation_type_2' => 'třílůžkový pokoj',
     'accommodation_type_3' => 'apartmán',
+    'accommodation_type_4' => 'dvoulůžkový pokoj s přistýlkami',
     
     'interior' => 'interiér',
     'exterior' => 'exteriér',

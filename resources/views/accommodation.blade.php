@@ -86,6 +86,9 @@
                                 <i class="fas fa-chevron-right"></i> &nbsp; dvoupokojový apartmán, kde v ložnici jsou 2
                                 lůžka a v obývacím pokoji je možnost 2 přistýlek na rozkládací pohovce – vhodné pro děti
                             </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; celková kapacita 24 lůžek
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -163,7 +166,10 @@
                                 <i class="fas fa-chevron-right"></i> &nbsp; 3 dvoulůžkové pokoje
                             </li>
                             <li>
-                                <i class="fas fa-chevron-right"></i> &nbsp; apartmán 2 + 2
+                                <i class="fas fa-chevron-right"></i> &nbsp; 1 dvoulůžkový pokoj s možností 2 přistýlek
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> &nbsp; celková kapacita 10 lůžek
                             </li>
                         </ul>
                     </div>

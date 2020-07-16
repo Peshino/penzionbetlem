@@ -42,11 +42,11 @@
                         </p>
                         <p class="mt-3">
                             <p class="text-center">Přijměte vřelé pozvání k pobytu.</p>
-                            <p class="text-center"><strong>David Navrátil</strong></p>
+                            <p class="text-center"><strong>manželé Navrátilovi</strong></p>
                             <p class="text-center">
                                 <small>
                                     <em>
-                                        majitel - <span class="text-uppercase">{{ config('variants.name') }}
+                                        majitelé - <span class="text-uppercase">{{ config('variants.name') }}
                                             BETLÉM</span>
                                     </em>
                                 </small>
@@ -68,7 +68,12 @@
                                 alt="{{ config('variants.name') }} @lang('messages.accommodation') 1">
                         </a>
                         <div class="text-center pt-3 pb-1">
+                            @if ($variant1)
                             <h4>@lang('messages.accommodation_type_1')</h4>
+                            @endif
+                            @if ($variant2)
+                            <h4>@lang('messages.accommodation_type_1')</h4>
+                            @endif
                         </div>
                     </div>
                     <div class="col-lg">
@@ -78,7 +83,12 @@
                                 alt="{{ config('variants.name') }} @lang('messages.accommodation') 2">
                         </a>
                         <div class="text-center pt-3 pb-1">
+                            @if ($variant1)
                             <h4>@lang('messages.accommodation_type_2')</h4>
+                            @endif
+                            @if ($variant2)
+                            <h4>@lang('messages.accommodation_type_1')</h4>
+                            @endif
                         </div>
                     </div>
                     <div class="col-lg">
@@ -88,7 +98,12 @@
                                 alt="{{ config('variants.name') }} @lang('messages.accommodation') 3">
                         </a>
                         <div class="text-center pt-3 pb-1">
+                            @if ($variant1)
                             <h4>@lang('messages.accommodation_type_3')</h4>
+                            @endif
+                            @if ($variant2)
+                            <h4>@lang('messages.accommodation_type_4')</h4>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -153,8 +168,7 @@
                             <p>
                                 <strong>
                                     <a href="{{ route(config('variants.route_prefix_dash') . 'contacts') }}">
-                                        <span
-                                            class="align-middle text-uppercase">
+                                        <span class="align-middle text-uppercase">
                                             @lang('messages.contacts')
                                         </span>
                                     </a>

@@ -65,17 +65,11 @@
                 <div class="pt-1">
                     <ul class="pl-4">
                         <li>
-                            <i class="fas fa-chevron-right"></i> &nbsp; recepce otevřena <strong>pondělí -
-                                pátek</strong> v čase <strong>8:00 - 10:00 hodin</strong>
-                        </li>
-                        <li>
-                            <i class="fas fa-chevron-right"></i> &nbsp; dle potřeb ubytovaných je po telefonické
-                            domluvě
-                            pracovník připraven i mimo tuto dobu
+                            <i class="fas fa-chevron-right"></i> &nbsp; recepce otevřena po telefonické domluvě
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i> &nbsp; čas příjezdu hostů: <strong>14:00 -
-                                20:00 hodin</strong>
+                                20:00 hodin</strong> - prosíme hosty o telefonickou informaci předpokládaného času příjezdu 
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i> &nbsp; čas odjezdu hostů: <strong>do 10:00
