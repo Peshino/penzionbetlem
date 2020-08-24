@@ -28,8 +28,8 @@ $(document).ready(() => {
     // });
 
     setTimeout(() => {
-        $('.alert').fadeOut(750);
-    }, 2500);
+        $('.alert').fadeOut(500);
+    }, 7500);
 
     if ($('body textarea').length) {
         const textareaId = $('body textarea').attr('id');
