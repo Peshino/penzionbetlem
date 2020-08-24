@@ -37,9 +37,9 @@
             </main>
 
             @include('partials/footer')
-
-            @include('partials/cookie-bar')
         </div>
+
+        @include('partials/cookie-bar')
     </div>
 
     {{-- facebook plugin --}}
