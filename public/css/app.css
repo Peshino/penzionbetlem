@@ -11938,6 +11938,13 @@ html {
      object-fit: cover;
 }
 
+#main img.homepage-gallery {
+  width: 21rem;
+  height: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #main .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;

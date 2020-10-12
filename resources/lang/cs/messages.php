@@ -9,6 +9,8 @@ return [
     'footer_rights' => 'všechna práva vyhrazena',
     'created_by' => 'web vytvořil',
 
+    'in-construction' => 'připravujeme',
+
     'sign_in_tab' => 'Přihlásit se',
     'sign_in_header' => 'Přihlášení',
     'sign_in_placeholder_username' => 'E-mail',

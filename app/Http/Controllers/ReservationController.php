@@ -24,7 +24,7 @@ class ReservationController extends Controller
     public function sendReservationMail(Request $request)
     {
         $attributes = $request->validate([
-            'email' => 'required|min:2|max:100',
+            'email' => 'required|min:2|max:100|string|email:rfc,dns',
             'firstname' => 'required|min:2|max:100',
             'lastname' => 'required|min:2|max:100',
             'telephone' => 'required|min:2|max:100',
