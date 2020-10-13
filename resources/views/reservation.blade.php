@@ -21,10 +21,9 @@
                 </p>
                 <p>
                     Zasláním 50% zálohy z celkové ceny objednávky objednatel prohlašuje, že se řádně seznámil s
-                    obchodními podmínkami uvedenými na <strong><a
+                    obchodními podmínkami uvedenými <strong><a
                             href="{{ route(config('variants.route_prefix_dash') . 'reservation') }}">
-                            @lang('messages.' . config('variants.name') . '_name')
-                        </a></strong> v sekci rezervace.
+                            zde</a>.</strong>
                 </p>
                 <p>
                     Při stornování objednávky ve lhůtě kratší než 30 dnů před zahájením čerpání služeb je zaplacená

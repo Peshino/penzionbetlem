@@ -35,8 +35,12 @@ class ReservationController extends Controller
             'variant_route_prefix' => '',
         ]);
 
-        if (Mail::to(config('mail.to_reservation.address'))->send(new Reservation($attributes)) === null) {
-            session()->flash('flash_message_success', '<i class="fas fa-check"></i>');
+        if (Mail::to(config('mail.to_reservation.address'))->send(new Reservation($attributes, 'emails.reservation')) === null) {
+            if (Mail::to($attributes['email'])->send(new Reservation($attributes, 'emails.reservation-customer')) === null) {
+                session()->flash('flash_message_success', '<i class="fas fa-check"></i>');
+            } else {
+                session()->flash('flash_message_danger', '<i class="fas fa-times"></i>');
+            }
         } else {
             session()->flash('flash_message_danger', '<i class="fas fa-times"></i>');
         }

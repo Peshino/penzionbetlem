@@ -13,15 +13,17 @@ class Reservation extends Mailable
     use Queueable, SerializesModels;
 
     public $details;
+    public $emailTemplate;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($details)
+    public function __construct($details, $emailTemplate)
     {
         $this->details = $details;
+        $this->emailTemplate = $emailTemplate;
     }
 
     /**
@@ -32,6 +34,6 @@ class Reservation extends Mailable
     public function build()
     {
         return $this->subject('Rezervace ubytování - ' . $this->details['variant'])
-            ->view('emails.reservation');
+            ->view($this->emailTemplate);
     }
 }

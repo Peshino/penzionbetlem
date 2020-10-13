@@ -27,7 +27,9 @@
         <h2>Rezervace ubytování - {{ $details['variant'] }}</h2>
     </div>
     <div style="padding: 0.5rem;">
-        <h3>Informace o zákazníkovi</h3>
+        <h3>Dobrý den, děkujeme za Vaši objednávku. Vaše rezervace byla úspěšně zaevidována a v co nejkratší době Vás
+            budeme kontaktovat ohledně dostupnosti pokojů, případně potvrzením rezervace.
+            Objednávka byla vystavena na následující údaje:</h3>
     </div>
     <div style="padding: 0.6rem;">
         <p>email: <strong>{{ $details['email'] }}</strong></p>
@@ -45,12 +47,8 @@
         <p>poznámky k rezervaci:
             <strong>{{ empty($details['reservationNotes']) ? 'žádné' : $details['reservationNotes'] }}</strong></p>
     </div>
-    <div style="padding: 0.6rem;">
-        <p>souhlas o zpracování dat:
-            <strong>{{ $details['agreement'] === 'on' ? 'souhlas udělen' : 'souhlas neudělen' }}</strong></p>
-    </div>
-    <div style="padding: 0.6rem;">
-        <strong>Nyní je potřeba kontaktovat zákazníka.</strong>
+    <div style="padding: 1rem 0.6rem;">
+        <p>Tento email je pouze informativní, prosíme, neodpovídejte na něj. Děkujeme.</strong></p>
     </div>
 </body>
 
