@@ -17,7 +17,7 @@
                     <div class="col-lg">
                         <p class="text-center pt-2 about-us-text">
                             @if ($variant1)
-                            Město Hlinsko leží 582 m nad mořem na úpatí Českomoravské vrchoviny v chráněné krajinné
+                            testMěsto Hlinsko leží 582 m nad mořem na úpatí Českomoravské vrchoviny v chráněné krajinné
                             oblasti Žďárské vrchy. V jeho okolí jsou překrásné přírodní scenérie, jenž jsou dosud
                             nenarušené
                             civilizací. Ovzduší na hlinecku patří k nejčistším v České republice.
