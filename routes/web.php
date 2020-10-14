@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Artisan;
 
 Auth::routes();
 
@@ -65,7 +64,3 @@ Route::prefix(config('variants.variant_2.route_prefix'))->group(function () {
 });
 
 Route::post('/send-reservation-mail', 'ReservationController@sendReservationMail')->name('send-reservation-mail');
-
-Route::get('/symlink', function () {
-    Artisan::call('storage:link');
-});
