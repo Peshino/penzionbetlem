@@ -33,7 +33,7 @@ class Reservation extends Mailable
      */
     public function build()
     {
-        return $this->subject('Rezervace ubytování - ' . $this->details['variant'])
+        return $this->subject('Rezervace ubytování - ' . strtoupper($this->details['variant']) . ' BETLÉM')
             ->view($this->emailTemplate);
     }
 }

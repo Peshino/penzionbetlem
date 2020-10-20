@@ -15,6 +15,7 @@
                 <div class="row">
                     <div class="col-md text-center contacts">
                         <div class="pb-3">
+                            <h5>provozovna</h5>
                             <h4 class="text-uppercase">
                                 <strong>
                                     {{ config('variants.name') }} BETLÉM
@@ -37,6 +38,7 @@
                     </div>
                     <div class="col-md text-center contacts">
                         <div class="pb-3 text-secondary">
+                            <h5>provozovatel</h5>
                             <h4>
                                 <strong>
                                     @lang('messages.contacts_' . config('variants.name') . '_company_name')
@@ -69,7 +71,8 @@
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i> &nbsp; čas příjezdu hostů: <strong>14:00 -
-                                20:00 hodin</strong> - prosíme hosty o telefonickou informaci předpokládaného času příjezdu 
+                                20:00 hodin</strong> - prosíme hosty o telefonickou informaci předpokládaného času
+                            příjezdu
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i> &nbsp; čas odjezdu hostů: <strong>do 10:00

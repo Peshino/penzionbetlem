@@ -24,7 +24,7 @@
 
 <body>
     <div style="padding: 0.4rem;">
-        <h2>Rezervace ubytování - {{ $details['variant'] }}</h2>
+        <h2>Rezervace ubytování - <span style="text-transform: uppercase;">{{ $details['variant'] }}</span> BETLÉM</h2>
     </div>
     <div style="padding: 0.5rem;">
         <h3>Informace o zákazníkovi</h3>
@@ -37,6 +37,12 @@
     </div>
     <div style="padding: 0.6rem;">
         <p>telefon: <strong>{{ $details['telephone'] }}</strong></p>
+    </div>
+    <div style="padding: 0.6rem;">
+        <p>počet osob: <strong>{{ $details['numberOfPersons'] }}</strong></p>
+    </div>
+    <div style="padding: 0.6rem;">
+        <p>typ pokoje: <strong>{{ $details['roomType'] }}</strong></p>
     </div>
     <div style="padding: 0.6rem;">
         <p>datum příjezdu a odjezdu: <strong>{{ $details['datefilter'] }}</strong></p>

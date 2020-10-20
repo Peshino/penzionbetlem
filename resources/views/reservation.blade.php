@@ -63,6 +63,33 @@
                                 value="{{ old('telephone') }}" required />
                         </div>
                         <div class="floating-label">
+                            <label for="number-of-persons">@lang('messages.number_of_persons')</label>
+                            <input class="form-control" id="number-of-persons" name="numberOfPersons" type="number"
+                                value="{{ old('numberOfPersons') }}" required />
+                        </div>
+                        <div class="floating-label">
+                            <label for="room-type">@lang('messages.room_type')</label>
+                            <select name="roomType" class="floating-select form-control"
+                                onclick="this.setAttribute('value', this.value);" value="{{ old('roomType') }}"
+                                id="room-type">
+                                @if ($variant1)
+                                <option value="@lang('messages.accommodation_type_1')">
+                                    @lang('messages.accommodation_type_1')</option>
+                                <option value="@lang('messages.accommodation_type_2')">
+                                    @lang('messages.accommodation_type_2')</option>
+                                <option value="@lang('messages.accommodation_type_3')">
+                                    @lang('messages.accommodation_type_3')</option>
+                                @endif
+                                @if ($variant2)
+                                <option value="@lang('messages.accommodation_type_1')">
+                                    @lang('messages.accommodation_type_1')</option>
+                                <option value="@lang('messages.accommodation_type_4')">
+                                    @lang('messages.accommodation_type_2')</option>
+                                @endif
+                            </select>
+                            <span class="highlight"></span>
+                        </div>
+                        <div class="floating-label">
                             <label for="arrival-departure-date">@lang('messages.arrival_departure_date')</label>
                             <input class="form-control input-daterangepicker" id="arrival-departure-date"
                                 name="datefilter" type="text" value="{{ old('datefilter') }}" required />

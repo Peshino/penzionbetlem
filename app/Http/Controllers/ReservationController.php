@@ -28,6 +28,8 @@ class ReservationController extends Controller
             'firstname' => 'required|min:2|max:100',
             'lastname' => 'required|min:2|max:100',
             'telephone' => 'required|min:2|max:100',
+            'numberOfPersons' => 'required|min:1|max:100|integer',
+            'roomType' => 'required',
             'datefilter' => 'required|min:2|max:100',
             'reservationNotes' => '',
             'agreement' => 'required',

@@ -23,13 +23,12 @@
 </head>
 
 <body>
-    <div style="padding: 0.4rem;">
-        <h2>Rezervace ubytování - {{ $details['variant'] }}</h2>
-    </div>
     <div style="padding: 0.5rem;">
         <h3>Dobrý den, děkujeme za Vaši objednávku. Vaše rezervace byla úspěšně zaevidována a v co nejkratší době Vás
-            budeme kontaktovat ohledně dostupnosti pokojů, případně potvrzením rezervace.
-            Objednávka byla vystavena na následující údaje:</h3>
+            budeme kontaktovat ohledně dostupnosti pokojů, případně potvrzením rezervace.</h3>
+    </div>
+    <div style="padding: 0.5rem;">
+        <h3>Objednávka byla vystavena na následující údaje:</h3>
     </div>
     <div style="padding: 0.6rem;">
         <p>email: <strong>{{ $details['email'] }}</strong></p>
@@ -41,6 +40,12 @@
         <p>telefon: <strong>{{ $details['telephone'] }}</strong></p>
     </div>
     <div style="padding: 0.6rem;">
+        <p>počet osob: <strong>{{ $details['numberOfPersons'] }}</strong></p>
+    </div>
+    <div style="padding: 0.6rem;">
+        <p>typ pokoje: <strong>{{ $details['roomType'] }}</strong></p>
+    </div>
+    <div style="padding: 0.6rem;">
         <p>datum příjezdu a odjezdu: <strong>{{ $details['datefilter'] }}</strong></p>
     </div>
     <div style="padding: 0.6rem;">
@@ -48,7 +53,10 @@
             <strong>{{ empty($details['reservationNotes']) ? 'žádné' : $details['reservationNotes'] }}</strong></p>
     </div>
     <div style="padding: 1rem 0.6rem;">
-        <p>Tento email je pouze informativní, prosíme, neodpovídejte na něj. Děkujeme.</strong></p>
+        <p><strong>Tento email je pouze informativní, prosíme, neodpovídejte na něj. Děkujeme.</strong></p>
+    </div>
+    <div style="padding: 1rem 0.6rem;">
+        <p><strong><span style="text-transform: uppercase;">{{ $details['variant'] }}</span> BETLÉM</strong></p>
     </div>
 </body>
 
