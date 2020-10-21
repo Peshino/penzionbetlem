@@ -163,24 +163,24 @@
                             <p><i class="fas fa-fw fa-dice-five"></i>&nbsp;společenské a dětské hry</p>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <p><i class="fas fa-fw fa-swimming-pool"></i>&nbsp;koupaliště 500m</p>
+                            <p><i class="fas fa-fw fa-swimming-pool"></i>&nbsp;koupaliště 500 m</p>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <p><i class="fas fa-fw fa-swimmer"></i>&nbsp;krytý bazén 500m</p>
+                            <p><i class="fas fa-fw fa-swimmer"></i>&nbsp;krytý bazén 500 m</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <p><i class="fas fa-fw fa-skiing"></i>&nbsp;lyžárna</p>
+                            <p><i class="fas fa-skiing-nordic"></i>&nbsp;lyžárna</p>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <p><i class="fas fa-fw fa-bicycle"></i>&nbsp;kolárna</p>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <p><i class="fas fa-fw fa-tshirt"></i>&nbsp;pračka</p>
+                            <p><i class="fas fa-parking"></i>&nbsp;parkování</p>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <p><i class="fas fa-fw fa-box"></i>&nbsp;sušička</p>
+                            <p><i class="fas fa-fw fa-skiing"></i>&nbsp;sjezdovka 1000 m</p>
                         </div>
                     </div>
                 </div>
