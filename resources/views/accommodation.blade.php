@@ -31,17 +31,17 @@
                     <div class="col-lg-7">
                         <div class="row pb-2">
                             <div class="col">
-                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_1.png') }}"
+                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_1.jpg') }}"
                                     data-toggle="lightbox" data-gallery="gallery">
-                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_1.png') }}"
+                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_1.jpg') }}"
                                         class="align-middle img-fluid rounded hover-shadow"
                                         alt="{{ config('variants.name') }} - ubytování">
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_2.png') }}"
+                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_2.jpg') }}"
                                     data-toggle="lightbox" data-gallery="gallery">
-                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_2.png') }}"
+                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_2.jpg') }}"
                                         class="align-middle img-fluid rounded hover-shadow"
                                         alt="{{ config('variants.name') }} - ubytování">
                                 </a>
@@ -49,17 +49,17 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_3.png') }}"
+                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_3.jpg') }}"
                                     data-toggle="lightbox" data-gallery="gallery">
-                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_3.png') }}"
+                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_3.jpg') }}"
                                         class="align-middle img-fluid rounded hover-shadow"
                                         alt="{{ config('variants.name') }} - ubytování">
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_4.png') }}"
+                                <a href="{{ asset('img/' . config('variants.name') . '_accommodation_4.jpg') }}"
                                     data-toggle="lightbox" data-gallery="gallery">
-                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_4.png') }}"
+                                    <img src="{{ asset('img/' . config('variants.name') . '_accommodation_4.jpg') }}"
                                         class="align-middle img-fluid rounded hover-shadow"
                                         alt="{{ config('variants.name') }} - ubytování">
                                 </a>

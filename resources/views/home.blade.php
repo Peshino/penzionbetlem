@@ -60,7 +60,7 @@
                 <div class="row">
                     <div class="col-lg text-center">
                         <a href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
-                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_1.png') }}"
+                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_1.jpg') }}"
                                 class="align-middle img-fluid rounded hover-shadow homepage-gallery"
                                 alt="{{ config('variants.name') }} @lang('messages.accommodation') 1">
                         </a>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="col-lg text-center">
                         <a href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
-                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_2.png') }}"
+                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_2.jpg') }}"
                                 class="align-middle img-fluid rounded hover-shadow homepage-gallery"
                                 alt="{{ config('variants.name') }} @lang('messages.accommodation') 2">
                         </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="col-lg text-center">
                         <a href="{{ route(config('variants.route_prefix_dash') . 'accommodation') }}">
-                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_3.png') }}"
+                            <img src="{{ asset('img/' . config('variants.name') . '_accommodation_3.jpg') }}"
                                 class="align-middle img-fluid rounded hover-shadow homepage-gallery"
                                 alt="{{ config('variants.name') }} @lang('messages.accommodation') 3">
                         </a>

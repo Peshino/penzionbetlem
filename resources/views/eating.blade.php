@@ -55,17 +55,17 @@
                         </ul>
                     </div>
                     <div class="col-lg pb-2">
-                        <a href="{{ asset('img/' . config('variants.name') . '_eating_1.png') }}" data-toggle="lightbox"
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_1.jpg') }}" data-toggle="lightbox"
                             data-gallery="gallery">
-                            <img src="{{ asset('img/' . config('variants.name') . '_eating_1.png') }}"
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_1.jpg') }}"
                                 class="align-middle img-fluid rounded hover-shadow"
                                 alt="{{ config('variants.name') }} - kuchyňka">
                         </a>
                     </div>
                     <div class="col-lg">
-                        <a href="{{ asset('img/' . config('variants.name') . '_eating_2.png') }}" data-toggle="lightbox"
+                        <a href="{{ asset('img/' . config('variants.name') . '_eating_2.jpg') }}" data-toggle="lightbox"
                             data-gallery="gallery">
-                            <img src="{{ asset('img/' . config('variants.name') . '_eating_2.png') }}"
+                            <img src="{{ asset('img/' . config('variants.name') . '_eating_2.jpg') }}"
                                 class="align-middle img-fluid rounded hover-shadow"
                                 alt="{{ config('variants.name') }} - kuchyňka">
                         </a>
