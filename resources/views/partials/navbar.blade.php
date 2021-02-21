@@ -68,7 +68,7 @@
                 </a>
             </div>
             <div class="col text-center {{ config('variants.variant_2.name') }}-route-prefix">
-                <a class="nav-link" href="{{ route(config('variants.variant_2.route_prefix_dash') . 'home') }}"><span
+                <a class="nav-link" href="https://chalupybetlem.cz/" target="_blank"><span
                         class="align-middle">@lang('messages.chalupy_name')</span></a>
             </div>
         </div>
