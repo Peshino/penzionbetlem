@@ -19,7 +19,7 @@
                     </h4>
                 </div>
                 <table class="table table-hover">
-                    <thead>
+                    {{-- <thead>
                         <tr>
                             <th scope="col">počet osob | délka pobytu</th>
                             <th scope="col">1 noc (Booking)</th>
@@ -49,6 +49,34 @@
                                 </small>
                             </th>
                         </tr>
+                    </tbody> --}}
+                    <thead>
+                        <tr>
+                            <th scope="col">počet osob | délka pobytu</th>
+                            <th scope="col">1 noc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1 osoba</th>
+                            <td>600 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2 osoby</th>
+                            <td>1100 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3 osoby (na přistýlce)</th>
+                            <td>1500 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>
+                                <small>
+                                    ceny ubytování bez stravy
+                                </small>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -57,7 +85,7 @@
                     </h4>
                 </div>
                 <table class="table table-hover">
-                    <thead>
+                    {{-- <thead>
                         <tr>
                             <th scope="col">počet osob | délka pobytu</th>
                             <th scope="col">1 noc (Booking)</th>
@@ -97,6 +125,38 @@
                                 </small>
                             </th>
                         </tr>
+                    </tbody> --}}
+                    <thead>
+                        <tr>
+                            <th scope="col">počet osob | délka pobytu</th>
+                            <th scope="col">1 noc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1 osoba</th>
+                            <td>800 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2 osoby</th>
+                            <td>1200 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3 osoby</th>
+                            <td>1600 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4 osoby (na přistýlce)</th>
+                            <td>1700 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>
+                                <small>
+                                    ceny ubytování bez stravy
+                                </small>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -105,7 +165,7 @@
                     </h4>
                 </div>
                 <table class="table table-hover">
-                    <thead>
+                    {{-- <thead>
                         <tr>
                             <th scope="col">počet osob | délka pobytu</th>
                             <th scope="col">1 noc (Booking)</th>
@@ -139,6 +199,38 @@
                                     ceny ubytování bez stravy
                                 </small>
                             </th>
+                        </tr>
+                    </tbody> --}}
+                    <thead>
+                        <tr>
+                            <th scope="col">počet osob | délka pobytu</th>
+                            <th scope="col">1 noc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1 osoba</th>
+                            <td>800 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2 osoby</th>
+                            <td>1300 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3 osoby</th>
+                            <td>1700 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4 osoby</th>
+                            <td>1800 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>
+                                <small>
+                                    ceny ubytování bez stravy
+                                </small>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -276,7 +368,7 @@
 
             @if ($variant2)
             <div class="first-part">
-                
+
                 <div class="pb-2">
                     <h4 class="color-{{ config('variants.name') }}">@lang('messages.accommodation_type_1') - standard
                     </h4>
