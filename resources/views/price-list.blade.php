@@ -59,7 +59,7 @@
                     <tbody>
                         <tr>
                             <th scope="row">1 osoba</th>
-                            <td>600 Kč / noc</td>
+                            <td>900 Kč / noc</td>
                         </tr>
                         <tr>
                             <th scope="row">2 osoby</th>
@@ -67,7 +67,7 @@
                         </tr>
                         <tr>
                             <th scope="row">3 osoby (na přistýlce)</th>
-                            <td>1500 Kč / noc</td>
+                            <td>1400 Kč / noc</td>
                         </tr>
                         <tr>
                             <th scope="row"></th>
@@ -134,12 +134,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1 osoba</th>
-                            <td>800 Kč / noc</td>
-                        </tr>
-                        <tr>
                             <th scope="row">2 osoby</th>
-                            <td>1200 Kč / noc</td>
+                            <td>1400 Kč / noc</td>
                         </tr>
                         <tr>
                             <th scope="row">3 osoby</th>
@@ -147,7 +143,7 @@
                         </tr>
                         <tr>
                             <th scope="row">4 osoby (na přistýlce)</th>
-                            <td>1700 Kč / noc</td>
+                            <td>1800 Kč / noc</td>
                         </tr>
                         <tr>
                             <th scope="row"></th>
@@ -209,20 +205,16 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1 osoba</th>
-                            <td>800 Kč / noc</td>
-                        </tr>
-                        <tr>
                             <th scope="row">2 osoby</th>
-                            <td>1300 Kč / noc</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3 osoby</th>
                             <td>1700 Kč / noc</td>
                         </tr>
                         <tr>
-                            <th scope="row">4 osoby</th>
+                            <th scope="row">3 osoby</th>
                             <td>1800 Kč / noc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4 osoby</th>
+                            <td>1900 Kč / noc</td>
                         </tr>
                         <tr>
                             <th scope="row"></th>
